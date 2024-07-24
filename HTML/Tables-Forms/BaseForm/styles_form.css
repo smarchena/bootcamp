@@ -1,0 +1,58 @@
+body{
+    background-color:beige ;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* selector{
+
+    propiedad: valor,
+    propiedad: valor,
+    propiedad: valor,
+
+} 
+--- Para seleccionar todos los elementos h1
+        h1{ 
+            propiedad: valor
+        }   
+
+--- Para seleccionar 1 elemento con ID = nombre
+        #nombre{
+            propiedad: valor
+        }
+
+--- Para selecccionar 1 o muchos elementos con clase = violeta
+        .violeta{
+            propeidad: valor
+        }
+
+--- Para seleccionar TODOS los elementos de mi HTML
+        *{
+            propiedad: valor
+        }
+*/
+
+.violeta{
+    background-color: chocolate;
+}
+
+#parrafo2{
+    background-color: aqua;
+    color:yellow;
+}
+    
+.grande{
+    font-size: 30px;
+}
+
+.externo{
+    margin-bottom: 20px;
+}
+
+.interno{
+    padding-left: 20px;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;   
+
+}
