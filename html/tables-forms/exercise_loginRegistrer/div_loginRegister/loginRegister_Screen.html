@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="./loginRegister_Screen.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" method="get">
+            <div class="login">
+                <h2><strong>Login</strong></h2>
+                <input type="text" placeholder="Username" name="username" class="spaceItem"><br>
+                <input type="password" placeholder="Password" name="password" class="spaceItem"><br>
+                <input type="checkbox">Remember me
+                <a href="./restartPassword.html"><strong> Forgot Password?</strong></a><br><br>
+                <button type="button">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div><br>
+        </form>
+       
+        <form action="" method="post">
+            <div class="register">
+                <h2><strong>Register</strong></h2>
+                <strong>Nombre: </strong><input type="text" placeholder="Ingrese su nombre" name="name" class="spaceItem"><br>
+                <strong>Apellido: </strong><input type="text" placeholder="Ingrese su apellido" name="lastName" class="spaceItem"><br>
+                <strong>Correo: </strong><input type="email" placeholder="Ingrese su email" name="Email" class="spaceItem"><br>
+                <strong>Contraseña: </strong><input type="password" placeholder="Cree una contraseña" name="password" class="spaceItem"><br>
+                <strong>Repita contraseña: </strong><input type="password" placeholder="Repita la contraseña" name="repeatPassword" class="spaceItem"><br>
+                <strong>Fecha de nacimiento: </strong><input type="date" name="age" class="spaceItem" min="10" size="5"><br>
+                <input type="checkbox" name="terms">Acepto términos y condiciones. <br><br>
+                <button type="submit">Registrar</button>
+                <button type="reset">Borrar</button>
+                
+
+
+            </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

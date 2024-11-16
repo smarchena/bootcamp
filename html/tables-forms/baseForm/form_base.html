@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./styles_form.css">
+</head>
+<body>
+    <!-- CREACIÓN DE FORMULARIOS -->
+        <h1>My first form</h1>
+
+    <p>Este es un párrafo.</p>
+
+        <form action="" method="post">
+
+            <input type="text" maxlength="8" minlength="3" placeholder="Ingrese su nombre" name="name" required> <br>
+            <!-- length = longitud. -->
+            <input type="email" placeholder="Ingrese su email" name="email" class="violeta"> <br>
+            <!-- placeholder = marcador de posición, posición lugar. -->
+            <input type="password" placeholder="Ingrese su contraseña" name="password"> <br> 
+            <input type="number" min="0" max="100" step="2" placeholder="Edad" name="age" class="externo interno"> <br>
+            
+            <input type="date">
+            <input type="time"> <br>
+            <input type="url" placeholder="Ingrese URL" disabled>
+            <input type="color"> <br>
+            <input type="file" placeholder="Ingrese archivo"> <br>
+            <textarea placeholder="Ingrese comentario" ></textarea> <br>
+            <input type="checkbox" checked> Acepto términos y condiciones. <br>
+            <input type="radio" name="sexo" value="male"> Masculino
+            <input type="radio" name="sexo" value="female"> Femenino 
+            <input type="radio" name="sexo" value="none"> Prefiero no decirlo <br>
+            <select name="color_preferido">
+                <option value="red" selected>Rojo</option>
+                <option value="blue">Azul</option>
+                <option value="green">Verde</option>
+            </select> <br><br>
+            <button type="button">Botón Normal</button>
+            <button type="reset" class="interno">Botón Borrar [reset]</button>
+            <button type="submit">Botón Enviar</button>
+
+        </form>
+
+    <p id="parrafo2" class="violeta grande">Este es otro párrafo.</p>
+
+</body>
+</html>

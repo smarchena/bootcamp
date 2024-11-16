@@ -1,0 +1,163 @@
+body{
+    background-color: #f4f4f4;
+}
+input, textarea, select{
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="number"]:hover{
+    border: 1.5px solid #333;
+}
+.container{
+    background-color: #fff;    
+    margin: 20px auto;
+    width: 40%;    
+    padding: 15px;
+    box-shadow: 0 0 10px rgb(0,0,0.2);  
+}
+#head{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+    align-items: center;
+}
+#bill{
+    border: 2px solid black;
+    margin: 20px 0px 20px 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0,0,0.2);
+}   
+#logo{
+    width: 300px;    
+    height: 100px;
+    box-shadow: 0 0 10px rgb(0,0,0.2);    
+    border: 2px solid black;
+    margin-left: 140px;
+    align-items: center;    
+}
+#img{
+    width: 300px;
+    align-items: center;
+}
+/* ------------------------------------------------- */
+.clientInfo{
+    /* border: 1px solid red; */
+    width: 90%;    
+    margin: 20px auto;
+    display: flex;
+    padding: 15px;   
+}
+#dataInformation{
+    /* border: 1px solid black;     */
+    text-align: center;
+    width: 50%;
+    box-shadow: 0 0 10px rgb(224, 221, 221);
+    border-radius: 10px; 
+}
+#name, #lastname, #number, #email{
+    margin: 5px;
+    width: 70%;
+    border-radius: 5px;
+}
+#date{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 40% auto;
+    height: 20%;
+    margin-left: 18%;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(224, 221, 221);
+    border-radius: 10px; 
+}
+#dateInfo{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+/*--------------------------------------------------*/
+.clientInfo2{
+    /* border: 1px solid black   ; */
+    width: 94%;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0 0 10px rgb(224, 221, 221);    
+}
+.description{
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 5px;    
+}
+.parrafo{
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#cantidad, #description, #precio{
+    margin-left: 6%;
+    padding: 1px;
+}
+/* --------------------------------------------- */
+
+/*--------------------------------------------*/
+.botones{
+    margin-top: 20px;
+    margin-left: 280px;
+}
+#h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    border: 1px solid black;
+    margin: 20px 20px 0px 20px;
+    height: 100px;
+}
+
+#h3_2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    border: 1px solid black;
+    margin: 0px 20px 20px 20px;
+    height: 100px;
+}
+#columnas{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    border: 1px solid black;
+    margin: 0px 20px 20px 20px;
+    height: 100px;
+    display: flex;
+}
+#cantidad_columna{
+    border: 1px solid red;
+    margin: 0px 20px 20px 20px ;    
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+#description_columna{
+    border: 1px solid red;
+    margin: 0px 0px 5px 160px;   
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+#precio_columna{
+    border: 1px solid red;
+    margin: 0px 0px 5px 140px;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+

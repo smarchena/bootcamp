@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleBill.css">
+    <title>Bill</title>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <div id="bill">
+                <h1><strong>FACTURA</strong></h1> 
+            </div>
+            <div id="logo">
+                <img src="./img/nameLogo.png" alt="" id="img">
+            </div>            
+        </div>
+        <div class="clientInfo" id="clientInfo">
+            <div id="dataInformation">
+                <h2><u><strong>Datos del cliente</strong></u></h2>
+                <ul>
+                    <li><strong>Nombre: </strong><input type="text" placeholder="Nombre(s)" class="size" id="name"></li>
+                    <li><strong>Apellido: </strong><input type="text" placeholder="Apellido(s)" class="size" id="lastname"></li>
+                    <li><strong>Teléfono: </strong><input type="tel" placeholder="Número telefónico"  class="size" id="number"></li>
+                    <li><strong>Correo: </strong><input type="email" placeholder="Correo electrónico" class="size" id="email"></li>
+                </ul>                          
+            </div>
+            <div id="date">
+                <h2><strong>Fecha: </strong></h2>
+                <input type="date" id="dateInfo">        
+            </div>
+        
+        </div>
+        <div class="clientInfo2">            
+            <div class="description" id="cantidad">
+                <p class="parrafo"><strong>CANTIDAD</strong></p>
+                <input type="number" placeholder="Ingrese cantidad" id="input_cant"> 
+            </div>
+            <div class="description" id="description">
+                <p class="parrafo"><strong>DESCRIPCIÓN</strong></p>
+                <input type="text" placeholder="Ingrese descripción" id="input_description"> 
+            </div>
+            <div class="description" id="precio">
+                <p class="parrafo"><strong>PRECIO ($)</strong></p>
+                <input type="number" placeholder="Ingrese precio" id="input_precio">
+            </div>                
+        </div>
+        
+        <div class="botones">
+            <button id="save">Guardar datos</button>
+            <button id="restore">Generar factura</button>
+        </div>
+        <h3 id="h3"></h3>
+        <div id="columnas">
+            <div class="columnas" id="cantidad_columna">
+                <h3><strong>Cantidad:</strong></h3>
+                <h3 id="h3_cant"></h3>
+            </div>
+            <div class="columnas" id="description_columna">
+                <h3><strong>Descripción:</strong></h3>
+            </div>
+            <div class="columnas" id="precio_columna">
+                <h3><strong>Precio:</strong></h3>
+            </div>
+        </div>
+        <h3 id="h3_2"></h3>      
+    </div>
+    <script src="./scriptBill.js"></script>
+
+</body>
+</html>
