@@ -88,7 +88,7 @@ const prompt = require('prompt-sync')();
 		fib [1] = 1;
 
 		if(num >= 0){
-			for(i=0; i < num; i++){
+			for(i=2; i < num; i++){
 			 fib[i] = fib[i-2] + fib[i-1];
 			}console.log('La serie Fibonacci del número ingresado es: ' + fib);
 		}else {
@@ -96,14 +96,33 @@ const prompt = require('prompt-sync')();
 		}
 
 // 2. 
-	console.log('\ntarea2_punto2');
-	let number2 = prompt('Ingrese un número crear pirámide: '); 
-	let caract = '*';
-	let adi = 0;
+		console.log('\ntarea2_punto2');
+	let numeroPiramide = parseInt(prompt('Ingrese un número crear pirámide: ')); 
+	let caracter;
+	let i2;
+	let repeticion;
+	numeroPiramide = numeroPiramide + numeroPiramide;	
 
-	for(i = 1; i <= number2; i++){
-		caract = adi + '*'
-		console.log(caract);
+	if(numeroPiramide > 0 ){
+		//Lo hará 5 veces
+		for(i2 = 1; i2 <= numeroPiramide; i2 = i2 +2){
+			caracter = '*';
+			// El número de asteriscos que hace en cada repetición
+			for(repeticion = 1; repeticion < i2; repeticion++){
+				caracter = caracter + '*';
+			} console.log(caracter);
+		}
+
+		// Lo hará 5 veces
+		for( i2 = numeroPiramide - 2; i2 > 1; i2 = i2 - 2){
+			caracter = '';
+			// el número de asteriscos que hace en cada repetición
+			for(repeticion= 1; repeticion < i2; repeticion++){
+				caracter = caracter + '*';
+			}console.log(caracter);
+		}
+	}else{
+		console.log('Debe ser un número mayor que 0');
 	}
 
 
