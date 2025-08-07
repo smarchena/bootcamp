@@ -6,7 +6,9 @@
 	Mostrar "Articulo no disponible"
 	Fin Si
 Fin Programa
+
 -------------------------------------------------------------------------------------------------
+
 Algoritmo = una secuencia de pasos, lógica, finita, ordenada (ej: una receta)
 
 Realizar = pasos para comprar un producto en MercadoLibre
@@ -154,58 +156,60 @@ a = b;
 b = c;
 alert('El nuevo valor de "a" es: '+ a + ' y el nuevo valor de "b" es: ' + b);
 
-// Hacer una calculadora que segun dos números realice operaciones matemáticas correspondientes:(+,-,*,/)
-// y muestre el resultado con un alert. [con numero1 y numero2] PAUTA: prompt('Ingrese el primer número:') // 
+/* Hacer una calculadora que segun dos números realice operaciones matemáticas correspondientes:(+,-,*,/)
+	y muestre el resultado con un alert. [con numero1 y numero2] PAUTA: prompt('Ingrese el primer número:') */ 
+	
 alert('***	Bienvenido a su calculadora digital ;)	***');
 var a = parseFloat(prompt('Ingrese primer número a operar:'));
-var operation = prompt('Ingrese el signo correspondiente de la operación a realizar: (+,-,*,/)');
 var b = parseFloat(prompt('Ingrese segundo número a operar:'));
-
-var sum = a+b;
-var rest = a-b;
-var mult = a*b;
-var div = a/b;
-if(operation == '+'){
-	alert('El resultado de la suma es: ' + sum);
-	}else if(operation == '-'){
-  	alert('El resultado de la resta es: ' + rest);
-   }else if(operation == '*'){
-   		alert('El resultado de la multiplicación es: ' + mult);
-   	}else if(operation == '/'){
-    		alert('El resultado de la división es: ' + div);	
-    	  }else if(operation !== '+','-','*','/'){
-		alert('No es un signo correspondiente.');
-}
-var repeat = prompt('¿Desea realizar otra operación? Si/No').toLowerCase();
-
-if(repeat == 'si'){
-var c = parseFloat(prompt('Ingrese primer número a operar:'));
 var operation = prompt('Ingrese el signo correspondiente de la operación a realizar: (+,-,*,/)');
-var d = parseFloat(prompt('Ingrese segundo número a operar:'));
-
-var sum = c+d;
-var rest = c-d;
-var mult = c*d;
-var div = c/d;
+var resul; 
 
 if(operation == '+'){
- alert('El resultado de la suma es: ' + sum);
+	resul = a + b;
+	alert('El resultado de la suma es: ' + resul);
 }else if(operation == '-'){
-  alert('El resultado de la resta es: ' + rest);
-   }else if(operation == '*'){
-   	alert('El resultado de la multiplicación es: ' + mult);
-   	  }else if(operation == '/'){
-    		alert('El resultado de la división es: ' + div);	
-    	  }else if(operation !== '+','-','*','/'){
-		alert('No es un signo correspondiente.');
-		}
-	}else if(repeat == 'no'){
-		alert('Fin de la operación. Goodbye! ;) ');
-    }else if(repeat !== 'si','no'){
-    	alert('No es una respuesta válida. Fin de la operación.');
-    }
-
+	resul = a - b;
+  	alert('El resultado de la resta es: ' + resul);
+}else if(operation == '*'){
+	resul = a * b;
+   	alert('El resultado de la multiplicación es: ' + resul);
+}else if(operation == '/'){
+	if(b == 0){
+		alert("El resultado es indeterminado.");
+	}else{
+		resul = a / b;
+		alert('El resultado de la división es: ' + resul);
+		}    			
+}else if(operation !== '+','-','*','/'){
+	alert('No es un signo correspondiente.');
+}
 
 // Ingresar 3 números y mostrar por alert cual es mayor y cuál es el menor.
+
+let a = parseFloat(prompt('Ingrese un número: '));
+let b = parseFloat(prompt('Ingrese un número: '));
+let c = parseFloat(prompt('Ingrese un número: '));
+
+if(a>=b){
+	if(b>=c){
+		alert('El número mayor es: ' + a + ' y el número menor es: ' + c);
+	}else{
+		alert('El número mayor es: ' + a + ' y el número menor es: ' + b);
+	}
+}else if(b>=c){
+	if(c>=a){
+		alert('El número mayor es: ' + b + ' y el número menor es: ' + a);
+	}else{
+		alert('El número mayor es: ' + b + ' y el número menor es: ' + c);
+	}
+}else if(c>=b){
+	if(b>=a){
+		alert('El número mayor es: ' + c + ' y el número menor es: ' + a);
+	}else{
+		alert('El número mayor es: ' + c + ' y el número menor es: ' + b);
+	}
+}
+
 
 

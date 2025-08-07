@@ -11,14 +11,14 @@ for(i = 0; i < 3; i++){
     alert("Hola!! ;)");    
 }
 
-//Factorial de un número ej: 5! = 5*4*3*2*1 = 120
-// El usuario va a ingresar un número y se debe calcular su factorial.
+/* Factorial de un número ej: 5! = 5*4*3*2*1 = 120
+  El usuario va a ingresar un número y se debe calcular su factorial. */
 
-var x = parseFloat(prompt('Ingrese un número: '));
+var num = parseFloat(prompt('Ingrese un número: '));
 var i;
 var resultado = 1;
 
-for(i = 1; i <= x; i++){ 
+for(i = num; i >= 1; i--){ 
     resultado = resultado * i;
   }
 
@@ -34,18 +34,18 @@ while(b <= a){
   b++;
 }
 
-// mismo ejercicio del factorial utilizando el while
+// Mismo ejercicio del factorial utilizando el while.
 
 var a = parseFloat(prompt('Ingrese un número: '));
 var resultado = 1;
 
 while(a >= 1){
     resultado = resultado * a;
-    a++;
+    a--;
 } 
 
-// Pedir al usuario que ingrese la hora y saludarlo con un mensaje que diga: buen día,
-// buenas tardes o buenas noches.
+/* Pedir al usuario que ingrese la hora y saludarlo con un mensaje que diga: buen día,
+    buenas tardes o buenas noches. */
 
 var a = parseInt(prompt('Ingrese hora del día: [Formato 24h]'));
 if(a < 12){
@@ -58,7 +58,7 @@ if(a < 12){
 	alert('No es una hora correcta.');
 }
 
-// El usuario ingresa que desea calcular: área de un círcúlo ó área de un triangulo.
+/* El usuario ingresa que desea calcular: área de un círcúlo ó área de un triangulo. */
 
 var calculo = prompt('Para calcular el área de un círculo presione: A   Para calcular el área de un triángulo presione: B   ').toLowerCase();
 var resultado; 
@@ -78,7 +78,8 @@ if(calculo == 'a'){
 	alert('No es una opción correcta.');
 }
 
-// Realizar un programa que el usuario ingrese el número de un mes (1-12) e indique cuántos días tiene ese mes:
+/* Realizar un programa que el usuario ingrese el número de un mes (1-12) 
+    e indique cuántos días tiene ese mes: */
 
 var mes = prompt('Ingrese número de mes: ');
 
@@ -90,8 +91,9 @@ if(mes == 1,3,5,7,8,10,12){
   alert('El mes' + mes + 'tiene 30 días');
 }
 
-//Realizar un programa para una tienda de autos. Si el auto vendido es un Ford Fiesta, tiene un descuento del 5%. Si es un FordFocus es de 10%.
-// el usuario debe ingresar la marca y el modelo, y el programa debe mostrar el descuento aplicado.
+/* Realizar un programa para una tienda de autos. Si el auto vendido es un Ford Fiesta, 
+    tiene un descuento del 5%. Si es un FordFocus es de 10%.
+    el usuario debe ingresar la marca y el modelo, y el programa debe mostrar el descuento aplicado.*/
 
 var marca = prompt('Ingrese marca del auto a comprar: ').toLowerCase();
 var model = prompt('Ingrese modelo del auto a comprar:' ).toLowerCase();
@@ -106,7 +108,8 @@ if(marca == 'ford'){
   alert('Esta marca no tiene descuentos en este momento.');
 }
 
-// Crear un programa donde el usuario ingrese en un prompt la temperatura en grados Celsius y el programa muestre un alert la temperatura en grados Farenheit. 
+/* Crear un programa donde el usuario ingrese en un prompt la temperatura en grados Celsius 
+  y el programa muestre un alert la temperatura en grados Farenheit. */
 
 alert('Bienvenido al convertidor de temperaturas de grados Celsius a Farenheit ;) ');
 var celsius = parseFloat(prompt('Ingrese el valor de la temperatura en grados Celsius: '));
@@ -119,8 +122,9 @@ if(celsius == celsius){
 	alert('No es un grado de temperatura.');
 }
 
-// El usuario ingresa un número se pide mostrar en diferentes alert que sean pares desde el 1 hasta el número ingresado. [Para los pares se escribe módulo 
-// (mod = 0 entonces 8 es par, si resultado ¡=0 entonces 8 es impar] [se una un ciclo for]
+/* El usuario ingresa un número se pide mostrar en diferentes alert que sean pares desde el 1 hasta 
+    el número ingresado. [Para los pares se escribe módulo   (mod = 0 entonces 8 es par,
+    si resultado ¡=0 entonces 8 es impar] [se una un ciclo for] */
 
 var a = parseInt(prompt('Ingrese un número: '));
 var i;
@@ -191,7 +195,8 @@ for(i=0; i<numeros.length; i++){
   }
 }
  
-// El usuario ingresa la cantidad de nombres que desea guardar, y luego se pide mediante un prompt todos los nombres que desea guardaar y guardarlo en un array.
+/* El usuario ingresa la cantidad de nombres que desea guardar, 
+  y luego se pide mediante un prompt todos los nombres que desea guardaar y guardarlo en un array. */
 
 var name = prompt('Ingrese la cantidad de nombres que desea guardar: ');
 var i;

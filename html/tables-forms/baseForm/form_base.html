@@ -12,7 +12,13 @@
 
     <p>Este es un párrafo.</p>
 
-        <form action="" method="post">
+        <form action="formulario.php" method="post"> <!-- en action, significa que una vez llenado 
+            la información del form, se enviará a un archivo asociado llamado en este caso "formulario.php"
+             puede ser a otro diferente ej: script.js, etc-->
+
+             <!-- El método "get" envia la informacion por la -barra de direcciones- o tareas, mostrando la información
+              del usuario (no es recomendable), en cambio, el método "post" confidencializa la información para que
+              sea privada para el usuario. Es decir, con "post" no muestra contraseñas ni nada en la barra de direcciones.-->
 
             <input type="text" maxlength="8" minlength="3" placeholder="Ingrese su nombre" name="name" required> <br>
             <!-- length = longitud. -->
@@ -20,18 +26,20 @@
             <!-- placeholder = marcador de posición, posición lugar. -->
             <input type="password" placeholder="Ingrese su contraseña" name="password"> <br> 
             <input type="number" min="0" max="100" step="2" placeholder="Edad" name="age" class="externo interno"> <br>
-            
+            <!-- es importante identificar cada input con su respectivo "name" para que pueda enviarse la información.-->
             <input type="date">
             <input type="time"> <br>
             <input type="url" placeholder="Ingrese URL" disabled>
             <input type="color"> <br>
             <input type="file" placeholder="Ingrese archivo"> <br>
             <textarea placeholder="Ingrese comentario" ></textarea> <br>
-            <input type="checkbox" checked> Acepto términos y condiciones. <br>
+            <input type="checkbox" checked> Acepto términos y condiciones.
+            <br>
             <input type="radio" name="sexo" value="male"> Masculino
             <input type="radio" name="sexo" value="female"> Femenino 
-            <input type="radio" name="sexo" value="none"> Prefiero no decirlo <br>
-            <select name="color_preferido">
+            <input type="radio" name="sexo" value="none"> Prefiero no decirlo
+            <br>
+            <select multiple name="color_preferido">
                 <option value="red" selected>Rojo</option>
                 <option value="blue">Azul</option>
                 <option value="green">Verde</option>
