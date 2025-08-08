@@ -50,7 +50,7 @@ var input = document.getElementById('nombre');
 btn.addEventListener("click", function(){
     
     var valor_input = input.value;
-    alert(valor_input.toUpperCase());
+    alert('El dato ingresado es: ' + valor_input.toUpperCase());
     input.value = "";
     
 });
