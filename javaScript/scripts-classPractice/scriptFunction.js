@@ -76,4 +76,12 @@ console.log(a);
      console.log ('El resultado de la operación es: ' + resultado(num1, num2) );
     // console.log('El resultado de la operación es: ' + result);
 
-
+    /* Mismo ejercicio de sumar dos números */
+    let primerDato = parseFloat(prompt('\nIngrese un número a sumar: '))
+    let segundoDato = parseFloat(prompt('Ingrese segundo número a sumar: '))
+    
+    function sumatoria(parametro1, parametro2){
+        let resultado3 = parametro1 + parametro2;
+        console.log('El resultado de la suma es: ' + resultado3);              
+    }
+    sumatoria(primerDato, segundoDato);
