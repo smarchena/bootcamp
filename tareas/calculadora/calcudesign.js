@@ -29,7 +29,7 @@ boton_9.addEventListener("click", function(){
     }else{        
         value_9 = boton_9.value;
         valor_derecho = valor_derecho + value_9;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '='; 
     }    
      
 });
@@ -42,7 +42,7 @@ boton_8.addEventListener("click", function(){
     }else{        
         value_8 = boton_8.value;
         valor_derecho = valor_derecho + value_8;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -54,7 +54,7 @@ boton_7.addEventListener("click", function(){
     }else{        
         value_7 = boton_7.value;
         valor_derecho = valor_derecho + value_7;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -66,7 +66,7 @@ boton_6.addEventListener("click", function(){
     }else{        
         value_6 = boton_6.value;
         valor_derecho = valor_derecho + value_6;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -78,7 +78,7 @@ boton_5.addEventListener("click", function(){
     }else{        
         value_5 = boton_5.value;
         valor_derecho = valor_derecho + value_5;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -90,7 +90,7 @@ boton_4.addEventListener("click", function(){
     }else{        
         value_4 = boton_4.value;
         valor_derecho = valor_derecho + value_4;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '='; 
     }  
 });
 
@@ -102,7 +102,7 @@ boton_3.addEventListener("click", function(){
     }else{        
         value_3 = boton_3.value;
         valor_derecho = valor_derecho + value_3;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -114,7 +114,7 @@ boton_2.addEventListener("click", function(){
     }else{        
         value_2 = boton_2.value;
         valor_derecho = valor_derecho + value_2;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -126,7 +126,7 @@ boton_1.addEventListener("click", function(){
     }else{        
         value_1 = boton_1.value;
         valor_derecho = valor_derecho + value_1;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -138,7 +138,7 @@ boton_0.addEventListener("click", function(){
     }else{        
         value_0 = boton_0.value;
         valor_derecho = valor_derecho + value_0;
-        boton_input1.value = valor_derecho; 
+        boton_input1.value = valor_izquierdo + operation + valor_derecho + ' ' + '=';; 
     }  
 });
 
@@ -153,28 +153,28 @@ boton_reset.addEventListener("click", function(){
 boton_sum.addEventListener("click", function(){
     estado = true;    
     operation = boton_sum.value;  
-    boton_input1.value = "\u002B"; 
+    boton_input1.value = valor_izquierdo + "\u002B"; 
       
 });
 
 boton_rest.addEventListener("click", function(){
     estado = true;    
     operation = boton_rest.value;   
-    boton_input1.value = "\u2212";
+    boton_input1.value = valor_izquierdo + "\u2212";
      
 });
 
 boton_mult.addEventListener("click", function(){
     estado = true;    
     operation = boton_mult.value;   
-    boton_input1.value = "\u00D7";
+    boton_input1.value = valor_izquierdo + "\u00D7";
     
 });
 
 boton_div.addEventListener("click", function(){
     estado = true;    
     operation = boton_div.value;   
-    boton_input1.value = "\u00F7";
+    boton_input1.value = valor_izquierdo + '\u00F7';
      
 });
 
@@ -191,25 +191,25 @@ boton_result.addEventListener("click", function(){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal + valor_derechoFinal;
-        boton_input1.value = resultado;
+        boton_input1.value = valor_izquierdo + '\u002B' + valor_derecho + ' = '+ resultado;
         
     }else if(operation == "-"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal - valor_derechoFinal;
-        boton_input1.value = resultado;
+        boton_input1.value = valor_izquierdo + '\u2212' + valor_derecho + ' = '+ resultado;
 
     }else if(operation == "*"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal * valor_derechoFinal;
-        boton_input1.value = resultado;
+        boton_input1.value = valor_izquierdo + '\u00D7' + valor_derecho + ' = '+ resultado;
 
     }else if(operation == "/"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal / valor_derechoFinal;
-        boton_input1.value = resultado;       
+        boton_input1.value = valor_izquierdo + '\u00F7' + valor_derecho + ' = '+ resultado;       
     }
     
 });
