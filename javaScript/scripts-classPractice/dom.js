@@ -6,16 +6,16 @@ un comentario
 multilínea
 */
 
-alert("Hola mundo!");
-
 // ACCERDER A UN ELEMENTO MEDIANTE SU ID
+
 var edad = document.getElementById("input_edad");
-/* alert(edad.type); */
+alert(edad.type);
 
 var my_div = document.getElementById("cualquier_cosa");
+alert(my_div.className);
 
 var parr = document.getElementById("parrafo");
-/* alert(parr.style.color); */
+alert(parr.style.color);
 
 parr.style.color = "blue";
 parr.innerText = "Ahora dice otra cosa";
@@ -37,8 +37,7 @@ p.addEventListener("click", function(){
 var boton = document.getElementById("boton");
 
 boton.addEventListener("click", function(){
-    console.log("Usted es el ganador por hacer click en el botón!! ;) ");
-    /* alert('Usted es el ganador por hacer click en el botón!! ;)'); */
+    alert("Usted es el ganador por hacer click en el botón!! ;) ");    
 });
 
 
@@ -47,12 +46,10 @@ boton.addEventListener("click", function(){
 var btn = document.getElementById('boton2');
 var input = document.getElementById('nombre');
 
-btn.addEventListener("click", function(){
-    
+btn.addEventListener("click", function(){    
     var valor_input = input.value;
     alert('El dato ingresado es: ' + valor_input.toUpperCase());
-    input.value = "";
-    
+    input.value = "";    
 });
 
 // EJERCICIO 2: CREAR DOS INPUTS Y UN BOTÓN. AL HACER CLIC EN EL BOTÓN SUMAR LOS VALORES DE LOS INPUTS.

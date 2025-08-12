@@ -1,30 +1,25 @@
-var estado = false;
-var contenido_suma1;
-var contenido_rest1;
-var contenido_mult1;
-var contenido_div1;
-var valor_izquierdo = "";
-var valor_derecho = "";
+let estado = false;
+let valor_izquierdo = "";
+let valor_derecho = "";
+let operation = "";
 
-var boton_9 = document.getElementById("key_9");
-var boton_8 = document.getElementById("key_8");
-var boton_7 = document.getElementById("key_7");
-var boton_6 = document.getElementById("key_6");
-var boton_5 = document.getElementById("key_5");
-var boton_4 = document.getElementById("key_4");
-var boton_3 = document.getElementById("key_3");
-var boton_2 = document.getElementById("key_2");
-var boton_1 = document.getElementById("key_1");
-var boton_0 = document.getElementById("key_0");
-var boton_sum = document.getElementById("key_sum");
-var boton_rest = document.getElementById("key_rest");
-var boton_mult = document.getElementById("key_mult");
-var boton_div = document.getElementById("key_div");
-var boton_result = document.getElementById("key_result");
-var boton_reset = document.getElementById("key_reset");
-// var boton_change = document.getElementById("change");
-var boton_input1 = document.getElementById("firstBox");
-// var boton_input2 = document.getElementById("secondBox");
+let boton_9 = document.getElementById("key_9");
+let boton_8 = document.getElementById("key_8");
+let boton_7 = document.getElementById("key_7");
+let boton_6 = document.getElementById("key_6");
+let boton_5 = document.getElementById("key_5");
+let boton_4 = document.getElementById("key_4");
+let boton_3 = document.getElementById("key_3");
+let boton_2 = document.getElementById("key_2");
+let boton_1 = document.getElementById("key_1");
+let boton_0 = document.getElementById("key_0");
+let boton_sum = document.getElementById("key_sum");
+let boton_rest = document.getElementById("key_rest");
+let boton_mult = document.getElementById("key_mult");
+let boton_div = document.getElementById("key_div");
+let boton_result = document.getElementById("key_result");
+let boton_reset = document.getElementById("key_reset");
+let boton_input1 = document.getElementById("firstBox");
 
 boton_9.addEventListener("click", function(){
     if(estado == false){        
@@ -36,7 +31,7 @@ boton_9.addEventListener("click", function(){
         valor_derecho = valor_derecho + value_9;
         boton_input1.value = valor_derecho; 
     }    
-    // boton_input2.value = boton_input2.value + value_9;    
+     
 });
 
 boton_8.addEventListener("click", function(){
@@ -157,30 +152,29 @@ boton_reset.addEventListener("click", function(){
 
 boton_sum.addEventListener("click", function(){
     estado = true;    
-    contenido_suma1 = boton_sum.value;   
-    boton_input1.value = "+";
-    
+    operation = boton_sum.value;  
+    boton_input1.value = "\u002B"; 
       
 });
 
 boton_rest.addEventListener("click", function(){
     estado = true;    
-    contenido_rest1 = boton_rest.value;   
-    boton_input1.value = "-";
+    operation = boton_rest.value;   
+    boton_input1.value = "\u2212";
      
 });
 
 boton_mult.addEventListener("click", function(){
     estado = true;    
-    contenido_mult1 = boton_mult.value;   
-    boton_input1.value = "*";
+    operation = boton_mult.value;   
+    boton_input1.value = "\u00D7";
     
 });
 
 boton_div.addEventListener("click", function(){
     estado = true;    
-    contenido_div1 = boton_div.value;   
-    boton_input1.value = "/";
+    operation = boton_div.value;   
+    boton_input1.value = "\u00F7";
      
 });
 
@@ -189,29 +183,29 @@ boton_div.addEventListener("click", function(){
 
 boton_result.addEventListener("click", function(){   
 
-    var resultado;
-    var valor_izquierdoFinal;
-    var valor_derechoFinal;
+    let resultado;
+    let valor_izquierdoFinal;
+    let valor_derechoFinal;
 
-    if(contenido_suma1 == "+"){
+    if(operation == "+"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal + valor_derechoFinal;
         boton_input1.value = resultado;
         
-    }else if(contenido_rest1 == "-"){
+    }else if(operation == "-"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal - valor_derechoFinal;
         boton_input1.value = resultado;
 
-    }else if(contenido_mult1 == "*"){
+    }else if(operation == "*"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal * valor_derechoFinal;
         boton_input1.value = resultado;
 
-    }else if(contenido_div1 == "/"){
+    }else if(operation == "/"){
         valor_izquierdoFinal = parseFloat(valor_izquierdo);
         valor_derechoFinal = parseFloat(valor_derecho);
         resultado = valor_izquierdoFinal / valor_derechoFinal;
@@ -223,11 +217,11 @@ boton_result.addEventListener("click", function(){
 
 // -------------------------- CONVERTER -----------------------------
 
-var texto = document.getElementById('texto');
-var mayus = document.getElementById('mayuscula');
-var minus = document.getElementById('minuscula');
-var cant = document.getElementById('caracteres');
-var reset = document.getElementById('boton');
+let texto = document.getElementById('texto');
+let mayus = document.getElementById('mayuscula');
+let minus = document.getElementById('minuscula');
+let cant = document.getElementById('caracteres');
+let reset = document.getElementById('boton');
 
 texto.addEventListener("input", function(){
     value_texto = texto.value;
@@ -237,7 +231,7 @@ texto.addEventListener("input", function(){
 });
 
 reset.addEventListener("click", function(){
-    var reset1 = "";
+    let reset1 = "";
     value_texto = texto.value;
     texto.value = reset1;
     mayus.textContent = reset1;
