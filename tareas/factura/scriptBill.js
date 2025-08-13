@@ -1,18 +1,18 @@
-var name1 = document.getElementById("name");
-var lastname = document.getElementById("lastname");
-var number = document.getElementById("number");
-var email = document.getElementById("email");
-var date = document.getElementById("dateInfo");
-var cant = document.getElementById("input_cant");
-var descrip = document.getElementById("input_description");
-var price = document.getElementById("input_precio");
-var h3 = document.getElementById("h3");
-var h3_2 = document.getElementById("h3_2");
-var guardar = document.getElementById("save");
-var recuperar = document.getElementById("restore");
-var image = document.getElementById("img");
-var datos = "";
-var items = "";
+let name1 = document.getElementById("name");
+let lastname = document.getElementById("lastname");
+let number = document.getElementById("number");
+let email = document.getElementById("email");
+let date = document.getElementById("dateInfo");
+let cant = document.getElementById("input_cant");
+let descrip = document.getElementById("input_description");
+let price = document.getElementById("input_precio");
+let h3 = document.getElementById("h3");
+let h3_2 = document.getElementById("h3_2");
+let guardar = document.getElementById("save");
+let recuperar = document.getElementById("restore");
+let image = document.getElementById("img");
+let datos = "";
+let items = "";
 
 guardar.addEventListener("click", function(){
     
