@@ -1,56 +1,77 @@
 body{
     background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 input, textarea, select{
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
 }
-input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="number"]:hover{
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+input[type="tel"]:hover, 
+input[type="number"]:hover{
     border: 1.5px solid #333;
 }
 .container{
     background-color: #fff;    
     margin: 20px auto;
-    width: 40%;    
+    width: 900px;    
     padding: 15px;
     box-shadow: 0 0 10px rgb(0,0,0.2);  
 }
+/* Header */ 
 #head{
     /* border: 1px solid red; */
     display: flex;
-    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    /* width: 90%; */
     padding: 15px;
-    margin: 20px auto;
-    align-items: center;
+    /* margin: 20px auto;
+    align-items: center; */
 }
 #bill{
     border: 2px solid black;
-    margin: 20px 0px 20px 20px;
-    width: 200px;
+    /* margin: 20px 0px 20px 20px; */
+    padding: 10px;
+    min-width: 150px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0,0,0.2);
+    flex: 1;
 }   
 #logo{
-    width: 300px;    
-    height: 100px;
+    max-width: 300px;    
+    height: auto;
     box-shadow: 0 0 10px rgb(0,0,0.2);    
     border: 2px solid black;
     margin-left: 140px;
     align-items: center;    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
 #img{
-    width: 300px;
-    align-items: center;
+    width: 100%;
+    height: auto;    
 }
-/* ------------------------------------------------- */
+/* Información del cliente */
 .clientInfo{
     /* border: 1px solid red; */
-    width: 90%;    
+    /* width: 90%;     */
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     padding: 15px;   
 }
 #dataInformation{
@@ -59,6 +80,8 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
     width: 50%;
     box-shadow: 0 0 10px rgb(224, 221, 221);
     border-radius: 10px; 
+    flex: 1;
+    padding: 10px;
 }
 #name, #lastname, #number, #email{
     margin: 5px;
@@ -68,30 +91,33 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
 #date{
     /* border: 1px solid black; */
     display: flex;
-    width: 40% auto;
+    min-width: 250px;
     height: 20%;
     margin-left: 18%;
     align-items: center;
     box-shadow: 0 0 10px rgb(224, 221, 221);
-    border-radius: 10px; 
+    border-radius: 10px;    
+    padding: 10px;
 }
 #dateInfo{
     text-align: center;
     margin: 5px;
     padding: 5px;
 }
-/*--------------------------------------------------*/
+/* Cantidad / Descripcion / Precio */
 .clientInfo2{
-    /* border: 1px solid black   ; */
     width: 94%;
+    gap: 15px;
+    padding: 15px;
     margin: 20px auto;
     display: flex;
+    flex-wrap: wrap;
     box-shadow: 0 0 10px rgb(224, 221, 221);    
 }
 .description{
-    /* border: 1px solid black; */
+    flex: 1;
     text-align: center;
-    padding: 5px;    
+    min-width: 200px;
 }
 .parrafo{
     margin: 3px;
@@ -102,15 +128,29 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
     margin-left: 6%;
     padding: 1px;
 }
-/* --------------------------------------------- */
-
-/*--------------------------------------------*/
+/*Botones*/
 .botones{
-    margin-top: 20px;
-    margin-left: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;    
+}
+.botones button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+button[id="save"]:hover{
+    border: 0.5px solid #333;
+}
+button[id="restore"]:hover{
+    border: 0.5px solid #333;   
 }
 #h3{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     border: 1px solid black;
     margin: 20px 20px 0px 20px;
@@ -118,19 +158,23 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
 }
 
 #h3_2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     border: 1px solid black;
     margin: 0px 20px 20px 20px;
     height: 100px;
 }
+/*Columas resultado*/
 #columnas{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     border: 1px solid black;
     margin: 0px 20px 20px 20px;
-    height: 100px;
+    /* height: 100px; */
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 #cantidad_columna{
     border: 1px solid red;
@@ -138,7 +182,7 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
     height: 40px;
     width: 80px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
 #description_columna{
@@ -147,7 +191,7 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
     height: 40px;
     width: 100px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
 #precio_columna{
@@ -156,7 +200,7 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, in
     height: 40px;
     width: 100px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
 
