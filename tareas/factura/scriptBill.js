@@ -15,29 +15,34 @@ let datos = "";
 let items = "";
 
 guardar.addEventListener("click", function(){
-    
-    datos = "<br>" + "<strong></strong>" + "Fecha: " + dateInfo.value + "<br>" + 
-    "Nombre: " + name1.value + "<br>" + 
-    "Apellido: " + lastname.value + "<br>" +
-    "Teléfono: " + number.value + "<br>" +
-    "Email: " + email.value + "<br>";
 
-    items = "<br>" + "CANTIDAD: " + input_cant.value + " DESCRIPCIÓN: " + input_description.value; 
+    datos = `<ul>
+    <li><strong>Fecha: </strong>${dateInfo.value}</li>
+    <li><strong>Nombre: </strong>${name1.value} ${lastname.value}</li>
+    <li><strong>Teléfono: </strong>${number.value}</li>
+    <li><strong>Email: </strong>${email.value}</li><br>
+    </ul>`
+    
+    items = `<strong>Cantidad: </strong>${input_cant.value} <strong>Descripción: </strong>${input_description.value} <strong>Precio: </strong> ${input_precio.value}`
+
     localStorage.setItem("nombres", datos);
     localStorage.setItem("items", items);
+
+    cant.value = ''
+    descrip.value = ''
+    price.value = ''
 });
 
 recuperar.addEventListener("click", function(){
     h3.innerHTML = localStorage.getItem("nombres");
     h3_2.innerHTML = localStorage.getItem("items");
 
+    name1.value = ''
+    lastname.value = ''
+    number.value = ''
+    email.value = ''
+    date.value = ''
 });
-
-
-    items = "<br>" + "CANTIDAD:" + "                " + "DESCRIPCION: "
-    "<br>" + input_cant.value;
-    localStorage.setItem("items", items);
-
 
 
 

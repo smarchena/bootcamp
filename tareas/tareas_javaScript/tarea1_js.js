@@ -83,9 +83,7 @@ const prompt = require('prompt-sync')();
 
 // 1.    
 		var num = parseInt(prompt('\nIngrese un número para la serie Fibonacci: '));
-		var fib = [];
-		fib [0] = 1;
-		fib [1] = 1;
+		var fib = [1,1];	
 
 		if(num >= 0){
 			for(i=2; i < num; i++){
