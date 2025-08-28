@@ -18,18 +18,19 @@
         </div>
         <div class="clientInfo" id="clientInfo">
             <div id="dataInformation">
-                <h2><u><strong>Datos del cliente</strong></u></h2>
+                <h2><u><strong>DATOS DEL CLIENTE</strong></u></h2>
                 <ul>
                     <li><strong>Nombre: </strong><input type="text" placeholder="Nombre(s)" class="size" id="name"></li>
                     <li><strong>Apellido: </strong><input type="text" placeholder="Apellido(s)" class="size" id="lastname"></li>
                     <li><strong>Teléfono: </strong><input type="tel" placeholder="Número telefónico"  class="size" id="number"></li>
                     <li><strong>Correo: </strong><input type="email" placeholder="Correo electrónico" class="size" id="email"></li>
-                </ul>                          
-            </div>
-            <div id="date">
+                </ul> 
+                <div id="date">
                 <h2><strong>Fecha: </strong></h2>
                 <input type="date" id="dateInfo">        
+            </div>                         
             </div>
+           
         
         </div>
         <div class="clientInfo2">            
@@ -54,17 +55,23 @@
         <h3 id="h3"></h3>
         <div id="columnas">
             <div class="columnas" id="cantidad_columna">
-                <h3><strong>Cantidad:</strong></h3>
+                <h3 id="h3_cant_name"><strong></strong></h3>
+                <hr>
                 <h3 id="h3_cant"></h3>
             </div>
             <div class="columnas" id="description_columna">
-                <h3><strong>Descripción:</strong></h3>
+                <h3 id ="h3_descrip_name"><strong></strong></h3>
+                <hr>
+                <h3 id="h3_descrip"></h3>
             </div>
             <div class="columnas" id="precio_columna">
-                <h3><strong>Precio:</strong></h3>
-            </div>
+                <h3 id="h3_precio_name"><strong></strong></h3>
+                <hr>
+                <h3 id="h3_precio"></h3>
+            </div> 
+            <h3 id="totalPrecio"></h3>
         </div>
-        <h3 id="h3_2"></h3>      
+        <hr>
     </div>
     <script src="./scriptBill.js"></script>
 

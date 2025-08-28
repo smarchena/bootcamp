@@ -17,7 +17,7 @@ input[type="text"]:hover,
 input[type="email"]:hover, 
 input[type="tel"]:hover, 
 input[type="number"]:hover{
-    border: 1.5px solid #333;
+    border: 1px solid #333;
 }
 .container{
     background-color: #fff;    
@@ -28,37 +28,35 @@ input[type="number"]:hover{
 }
 /* Header */ 
 #head{
-    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    /* width: 90%; */
-    padding: 15px;
-    /* margin: 20px auto;
-    align-items: center; */
+    padding: 15px;      
 }
 #bill{
     border: 2px solid black;
-    /* margin: 20px 0px 20px 20px; */
     padding: 10px;
     min-width: 150px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0,0,0.2);
     flex: 1;
+    margin-left: 25px;
+    justify-content: center;
 }   
 #logo{
-    max-width: 300px;    
+    max-width: 500px;    
     height: auto;
     box-shadow: 0 0 10px rgb(0,0,0.2);    
     border: 2px solid black;
-    margin-left: 140px;
+    margin-right: 25px;
     align-items: center;    
     flex: 1;
     display: flex;
     justify-content: center;
     background-color: black;
+    border-radius: 10px;
 }
 #img{
     width: 100%;
@@ -66,22 +64,21 @@ input[type="number"]:hover{
 }
 /* Información del cliente */
 .clientInfo{
-    /* border: 1px solid red; */
-    /* width: 90%;     */
-    margin: 20px auto;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    padding: 15px;   
+    /* gap: 15px; */
+    padding: 35px 35px 5px 35px;        
 }
 #dataInformation{
-    /* border: 1px solid black;     */
     text-align: center;
-    width: 50%;
+    /* width: 50%; */
     box-shadow: 0 0 10px rgb(224, 221, 221);
     border-radius: 10px; 
     flex: 1;
     padding: 10px;
+    margin: auto;   
+     
 }
 #name, #lastname, #number, #email{
     margin: 5px;
@@ -89,30 +86,37 @@ input[type="number"]:hover{
     border-radius: 5px;
 }
 #date{
-    /* border: 1px solid black; */
     display: flex;
-    min-width: 250px;
-    height: 20%;
-    margin-left: 18%;
+    flex-wrap: wrap;
+    width: 300px;
+    max-width: 250px;
+    height: auto;    
     align-items: center;
+    margin: auto;
     box-shadow: 0 0 10px rgb(224, 221, 221);
     border-radius: 10px;    
-    padding: 10px;
+    padding: auto;      
+    justify-content: center;    
 }
 #dateInfo{
     text-align: center;
     margin: 5px;
     padding: 5px;
+    width: auto;
+    cursor: pointer;    
 }
 /* Cantidad / Descripcion / Precio */
 .clientInfo2{
-    width: 94%;
-    gap: 15px;
-    padding: 15px;
-    margin: 20px auto;
+    width: 90%;
+    /* gap: 15px; */
+    padding: auto;
+    /* margin: 20px auto; */
     display: flex;
     flex-wrap: wrap;
-    box-shadow: 0 0 10px rgb(224, 221, 221);    
+    box-shadow: 0 0 10px rgb(224, 221, 221);
+    margin: auto;  
+    height: 80px;  
+    border-radius: 10px;  
 }
 .description{
     flex: 1;
@@ -123,10 +127,6 @@ input[type="number"]:hover{
     margin: 3px;
     font-size: 20px;
     font-weight: bolder;
-}
-#cantidad, #description, #precio{
-    margin-left: 6%;
-    padding: 1px;
 }
 /*Botones*/
 .botones{
@@ -144,64 +144,69 @@ input[type="number"]:hover{
     cursor: pointer;
 }
 button[id="save"]:hover{
-    border: 0.5px solid #333;
+    /* border: 0.5px solid #333; */
+    background-color: rgb(82, 174, 177);
+    
 }
 button[id="restore"]:hover{
-    border: 0.5px solid #333;   
+    /* border: 0.5px solid #333;    */
+    background-color: rgb(67, 150, 67);
 }
 #h3{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    border: 1px solid black;
-    margin: 20px 20px 0px 20px;
-    height: 100px;
+    font-size: small;    
+    display: flex;
+    flex-wrap: wrap;   
 }
 
 #h3_2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-    border: 1px solid black;
-    margin: 0px 20px 20px 20px;
-    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*Columas resultado*/
 #columnas{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    border: 1px solid black;
-    margin: 0px 20px 20px 20px;
-    /* height: 100px; */
+    font-size: small;   
+    margin: 20px;   
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    flex-wrap: wrap; 
+    /* border: 1px solid green;  */
+    height: auto;  
 }
-#cantidad_columna{
-    border: 1px solid red;
-    margin: 0px 20px 20px 20px ;    
-    height: 40px;
-    width: 80px;
-    text-align: center;
+#cantidad_columna, #description_columna, #precio_columna{
+    /* display: flex;
+    flex-wrap: wrap;    */
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
-}
-#description_columna{
-    border: 1px solid red;
-    margin: 0px 0px 5px 160px;   
-    height: 40px;
-    width: 100px;
+    justify-content: center;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    /* border: 1px solid red; */
+    width: 250px;
+    height: auto;
+    margin-left: 25px;
 }
-#precio_columna{
-    border: 1px solid red;
-    margin: 0px 0px 5px 140px;
-    height: 40px;
-    width: 100px;
-    text-align: center;
+#h3_cant, #h3_descrip, #h3_precio{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-size: small;    
+    display: flex;
+    flex-wrap: wrap; 
+}
+#input_cant{
+    width: 135px;
+}
+#input_description{
+    width: 300px;
+}
+#input_precio{ 
+    width: 120px;
+}
+#h3_cant, #h3_descrip, #h3_precio{
+    /* border: 1px solid green;     */
+    justify-content: center;
+    padding: auto;
+    margin: auto;
 }
 
 

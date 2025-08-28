@@ -1,0 +1,26 @@
+Se le pide al usuario que ingrese: 
+
+- Nombre y apellido
+- Email y teléfono
+- Fecha
+- Productos (cantidad, nombre del producto y precio)
+
+Cuando haga clic en 'generar factura':
+
+- Mostrar todos los datos (ordenados), y calcular el precio a pagar.
+Generar una factura y mostrar todos los datos ordenados capturando el total a pagar.
+
+Ejemplo:
+
+FACTURA
+
+nombre apellido
+Email
+telefono
+Fecha
+
+CANT.       Productos       PRECIO
+1           Zapatilla        $100
+3           Caramelos        $67
+
+Total a pagar: $167
