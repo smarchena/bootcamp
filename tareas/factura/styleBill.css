@@ -24,7 +24,7 @@ input[type="number"]:hover{
     margin: 20px auto;
     width: 900px;    
     padding: 15px;
-    box-shadow: 0 0 10px rgb(0,0,0.2);  
+    box-shadow: 0 0 10px rgb(0,0,0.2);
 }
 /* Header */ 
 #head{
@@ -156,7 +156,9 @@ button[id="restore"]:hover{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;    
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;    
+    /* width: 1000px;   
+    margin: auto; */
 }
 
 #h3_2{
@@ -169,11 +171,12 @@ button[id="restore"]:hover{
 #columnas{
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;   
-    margin: 20px;   
+    margin: auto;   
     display: flex;
     flex-wrap: wrap; 
     /* border: 1px solid green;  */
-    height: auto;  
+    height: auto;      
+    width: 800px;
 }
 #cantidad_columna, #description_columna, #precio_columna{
     /* display: flex;
@@ -185,7 +188,7 @@ button[id="restore"]:hover{
     /* border: 1px solid red; */
     width: 250px;
     height: auto;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 #h3_cant, #h3_descrip, #h3_precio{
     font-family: Arial, Helvetica, sans-serif;

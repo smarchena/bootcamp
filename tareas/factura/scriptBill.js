@@ -19,25 +19,46 @@ let items = "";
 let cantidad = "";
 let descripcion = "";
 let precio = "";
+let totalSumaCant = 0;
+let totalSumaPrecio = 0;
 
-guardar.addEventListener("click", function(){
+guardar.addEventListener("click", function(){    
+    
+    //Obtener valores actuales del input
+    let cantVal = parseInt(input_cant.value);
+    let priceVal = parseFloat(input_precio.value);
+    let descVal = input_description.value;
 
+    //Asegurarse de valores válidos: numéricos
+    if(isNaN(cantVal)  || isNaN(priceVal)){
+        alert('Por favor, ingresa valores numéricos válidos en cantidad y precio.');
+        return;
+    }
+
+    //Acomular cantidad y precio total
+   
+    totalSumaCant = totalSumaCant + cantVal;
+    totalSumaPrecio = totalSumaPrecio + (cantVal * priceVal);
+
+    //Capturar información
     datos = `<ul>
     <li><strong>Fecha: </strong>${dateInfo.value}</li>
     <li><strong>Nombre: </strong>${name1.value} ${lastname.value}</li>
     <li><strong>Teléfono: </strong>${number.value}</li>
     <li><strong>Email: </strong>${email.value}</li>
     </ul>`;
+
+    //Mostrar nombres de columnas
     nombreCantidad = `<strong>CANTIDAD</strong>`;
     nombreDescripcion = `<strong>DESCRIPCIÓN</strong>`;
     nombrePrecio = `<strong>PRECIO</strong>`;
-    cantidad = `${cantidad} <br> ${input_cant.value}`;
-    descripcion = `${descripcion} <br> -${input_description.value}`;
-    precio = `${precio} <br> $${input_precio.value}`;
-    let sumaCant = parseInt(cantidad) + parseInt(input_cant.value);
-    let sumaPrice = parseInt(precio) + parseInt(input_precio.value);
-    let totalPrice = sumaCant * sumaPrice;
-    total = `Total a pagar: ${totalPrice}`
+
+    //Acomular en la lista
+
+    cantidad = `${cantidad} <br> ${cantVal}`;
+    descripcion = `${descripcion} <br> ${descVal}`;
+    precio = `${precio}<br> $${priceVal}`;    
+    total = `<br><br>Total a pagar: $${totalSumaPrecio}`
 
     localStorage.setItem("nombres", datos);    
     localStorage.setItem("nombreCantidad",nombreCantidad);
