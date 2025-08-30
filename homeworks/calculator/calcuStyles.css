@@ -19,7 +19,7 @@ body{
     width: 50%;
     text-align: center;
     padding: 20px;
-    background-image: url("./img/fondoMath.jpg");
+    background-image: url("./img/background-math.jpg");
     border-radius: 50px;
     display: flex;
     justify-content: center;  
@@ -123,7 +123,7 @@ p{
     text-align: center;  
     padding: 20px;     
     border-radius: 50px;
-    background-image: url(./img/atardecer.jpeg);
+    background-image: url("./img/sunset.jpeg");
     display: flex;
     justify-content: center;
     align-items: flex-start;
