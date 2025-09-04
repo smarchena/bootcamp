@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+#container{
+    padding: 50px 0px 50px 0px;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0,0,0.2);
+    border-radius: 30px;
+}
+#div{
+    width: 200px;   
+    margin: 20px auto;
+    padding: auto   ;
+}
+#input{
+    width: 180px;
+    cursor: text;
+}:hover{
+    border-color: 2px solid black;
+}
+#boton{
+    cursor: pointer;
+}:hover{
+    color: rgb(rgb(124, 194, 110)); 
+}
+input[type="text"]:hover{
+    border-color: 1px solid black;
+}
+button[type="button"]:hover{
+    color: rgb(rgb(124, 194, 110)); 
+
+}
+
