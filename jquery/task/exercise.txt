@@ -1,6 +1,9 @@
 Crear una lista de tareas (to do list) que contenga:
 
+Parte 1: 
 - Input
 - Boton
 - un elemento donde se van agregar las tareas a medidas que se vayan acomulando. (div)
 
+Parte 2:
+- Agregar elementos a la lista, cada elemento contiene un hipervínculo (eliminar), al darle clic a eliminar, se elimina ese producto de la lista.
