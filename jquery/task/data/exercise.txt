@@ -1,0 +1,7 @@
+Crear una plataforma simulando un Blockbuster donde el usuario registre:
+
+- Nombre de una película
+- Género de la película
+- Año de la película
+
+cargar los datos y que se vayan mostrando en una tabla o listado y que se vaya viendo en pantalla.
