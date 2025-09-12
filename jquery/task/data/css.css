@@ -1,0 +1,19 @@
+body {
+    background-image: url('./img/blockbuster_logo.jpg')
+}
+
+#container {
+    box-shadow: 0 0 10px 10px #ffba33;
+    height: 60%;
+    background-color: beige;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.h4 {
+    color: #0d3fa9;
+    font-size: xx-large;
+}
+#select{
+    cursor: pointer;
+}
