@@ -1,0 +1,45 @@
+// COLECCIÓN = usuarios
+{
+    "nombre" : "Santiago",
+    "email" : "santiago@gmail.com",
+    "tel" : 123456789,
+    "ubiacion" : {
+        "direccion" : "Av. Siemprevivas 1234",
+        "ciudad" : "Springfield",
+        "país" : "EEUU",
+        "pc:" : "XS123"
+    }
+}
+
+// COLECCIÓN: productos
+{
+    "nombre" : "TV Smart 45''",
+    "modelo" : "2022",
+    "marca" : "Samsung",
+    "nuevo" : true,
+    "colores" : ["rojo", "azul", "negro"]
+}
+
+{
+    "nombre" : "Zapatillas",
+    "marca" : "Nike",
+    "talla" : "8",
+    "colores" : ["rojo", "negro"],
+    "precio" : 449.9
+}
+
+Datos que guardía de una compra!
+{
+    "name" : "Nombre",
+    "lastname" : "Apellido",
+    "id" : 1233466,
+    "product" : "Algo",
+    "cash" : true,
+    "dateBuy" : "01/01/2025",
+    "infoCard": {
+        "cardNumber" : 12345567789,
+        "cvv" : 123,
+        "date" : "01/01/2025",
+        "buyValue" : 449.9
+    }   
+}
