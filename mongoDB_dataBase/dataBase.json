@@ -1,4 +1,5 @@
-// COLECCIÓN = usuarios
+// COLECCION : usuarios
+
 {
     "nombre" : "Santiago",
     "email" : "santiago@gmail.com",
@@ -11,7 +12,8 @@
     }
 }
 
-// COLECCIÓN: productos
+// COLECCION : productos
+
 {
     "nombre" : "TV Smart 45''",
     "modelo" : "2022",
@@ -28,7 +30,7 @@
     "precio" : 449.9
 }
 
-Datos que guardía de una compra!
+// Datos que guardaría de una compra!
 {
     "name" : "Nombre",
     "lastname" : "Apellido",
