@@ -1,0 +1,37 @@
+al colocar db hace referencia a la base de datos, y el punto (.) ingresa a las funciones de esa base.
+
+comandos:
+    db.help() -> muestra una lista de comandos de ayuda del programa.
+    db.stats() -> muestra estadísticas e información acerca de la base de datos que estamos conectados actualmente.
+    show dbs -> muestra todas las bases de datos que tenemos.
+    use nombreBaseDato -> ingresa a la base de dato especificada.
+    db -> indica la base de datos la cual está conectado.
+    use prueba -> crea una base de datos llamada "prueba".
+    db.dropDatabase() -> elimina la base de datos seleccionada.
+    db.createCollection("prueba") -> crea una coleccion dentro de la base de datos.
+    show collections -> muestra las colecciones creadas en la base de datos.
+    db.prueba.drop() -> elimina la colección "prueba"
+    db.productos.find() -> muestra todos los documentos en la base de datos "productos".
+    db.productos.find({ marca: "Apple"}) -> muestra unicamente la busqueda especificada.
+    db.productos.find(
+        {
+            precio: { $gt: 1000}
+        }
+    )
+    esto es una identación que nos permite con un solo parentesis abierto escribir de esta forma dando enter.
+
+- insertar documentos dentro  de la  colección:
+    db.productos.insertOne({ nombre: "TV", marca: "LG", precio: 5000, nuevo: true }) -> inserta un solo documento.
+    db.productos.find() -> se muestran todos los productos y se verifica el último que se agregó.
+
+    db.productos.insertMany([ {}, {}, {} ]) -> inserta múltiples documentos.
+    db.productos.insertMany([ {nombre: "Pantalón", marca: "Chevignon", color: "Blue", precio: 1000},{nombre: "Camisa", marca: "Pilatos", color: "Blanca", precio: 2000},{nombre: "Zapatos", marca: "Ocean Pacific", color: "Gris", precio: 3000}])
+
+- muestra los documentos cuyo campo MARCA existe.
+    db.productos.find({ marca: {$exists: true}})
+
+
+- buscar aquellos documentos, donde exista la MARCA o el PRECIO
+    db.productos.find({ $or: [ {marca: {$exists: true}}, {precio: {$exists: true}} ] })
+
+
