@@ -1,0 +1,37 @@
+El cliente solicita una base de datos en donde tiene un gimnasio, se necesita registrar cada uno de los miembros o personas que van al gimnasio. hay tres tipos de clase: musculación, rumbaterapia y crossfit. Cada usuario puede pagar de forma mensual, semestral o anual.
+La mensualidad tiene un valor de $30USD mensuales. Si se paga semestral tiene un descuento del 10% y si se paga anual tiene un descuento del 25%.
+Se quiere llevar un registro de cada clase, quien va a la clase y mensualmente cuanto va pagando, y quiero saber cuantos clientes tengo en el plan mensual, semestral y anual.
+
+
+R/
+- Se crea la base de datos llamada gym:
+    use gym
+
+- Se crean las colecciones (clases, planes y usuarios):
+    db.createCollection('rumbaterapia')
+    db.createCollection('musculacion')
+    db.createCollection('crossfit')
+    db.createCollection('usuarios')
+    db.createCollection('planes')
+
+    show collections 
+        para ver las colecciones creadas
+
+- Se crean los usuarios:
+    db.usuarios.insertOne({ nombre: 'Santiago', id: 000, edad: 27, plan: 'Mensual'}) 
+    .
+    .
+    
+    db.usuarios.find()
+        para ver los datos de cada usuario creado.
+
+- Se agregan los usuarios a las distintas clases, ejemplo: musculacion
+    db.musculacion.insertMany([{ nombre: 'Santiago', id: '001', plan: 'Mensual'}, {nombre: 'Angie', id: '002', plan: 'Anual'}, {nombre: 'Juan', id: '006', plan: 'Semestral'}, {nonombre: 'William', id: '007', plan: 'Mensual'}])
+
+- Se hace lo mismo con las demás clases.
+
+- Se agrega cada usuario con su plan correspondiente y precio.
+    db.planes.insertMany([{nombre: 'Santiago', id: '001', plan: 'Mensual', precio: '$30 USD', clase: 'Musculacion'},{nombre: 'Juan', id: '006', plan: 'Anual', precio: '$225 USD', clase: 'Musculacion'},{nombre: 'Angie', id: '002', plan: 'Anual', precio: '$225 USD', clase: 'Musculacion'}, {nombre: 'William', id: '007', plan: 'Mensual', precio: '$30 USD', clase: 'Musculacion'}])
+
+Nota: En la información del ciente tener encuenta agregar información relevante del cliente como el plan en que está inscrito, puede ser con un ID de plan (referencia), fecha de registro, ID, etc. Luego, en la colección plan se crea un solo documento por plan y con el ID se hace referencia en la otra colección. (Esto sirve para optimizar código). (Repetir la información NO tiene sentido).
+
