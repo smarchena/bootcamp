@@ -1,0 +1,35 @@
+Hacer consultas y modificaciones en la base de datos:
+
+1. Agregar un campo (sexo = femenino), si el nombre de la persona termina con la letra "a" mayúscula o minúscula.
+
+    db.personas.updateMany( {nombre: {$regex: /a$/i}}, {$set: {sexo: 'Femenino'}} ) 
+        se crea el campo sexo a los datos seleccionados.
+
+    db.personas.find({nombre: {$regex: /a$/i}})
+        se consulta todos los datos modificados.
+
+2. Agregar 5 documentos con los datos de sus familiares. (nombre, apellido, pais, deporte, casado, fecha nacimiento, idioma)
+
+     db.personas.insertMany([ {nombre: 'Daniela', apellido: 'Lamprea', pais: 'Colombia', deporte: 'Patinaje', casado: false, fec_nacimiento: '09/08/2001', idioma: 'Español', sexo: 'Femenino'}, {nombre: 'Shadia', apellido: 'Castellar', pais: 'Colombia', deporte: 'Baile', casado: false, fec_nacimiento: '08/10/2009', idioma: 'Español', sexo: 'Femenino'}, {nombre: 'Iveth', apellido: 'Barrios', pais: 'Colombia', casado: false, fec_nacimiento: '09/01/1978', idioma: 'Español', sexo: 'Femenino'}, {nombre: 'Ingrid', apellido: 'Barrios', pais: 'Colombia', casado: true, fec_nacimiento: '22/12/1976', idioma: 'Español', sexo: 'Femenino'}, {nombre: 'Sergio', apellido: 'Marchena', pais: 'Colombia', deporte: 'Beisbol', casado: false, fec_nacimiento: '26/04/1978', idioma: 'Español', sexo: 'Masculino'} ])
+        
+3. Agregar (sexo = indefinido) si el campo "sexo" no existe.
+
+    db.personas.updateMany( {sexo: {$exists: false}}, {$set: {sexo: 'Indefinido'}} )
+
+4. Mostrar solo los nombres y apellidos de aquellas personas que NO tienen como deporte: futbol o son de Rusia.
+
+    db.personas.find({ $or: [{ deportes: { $ne: 'futbol' }}, {pais: 'Russia'} ]}, {nombre: 1, apellido: 1, _id: 0 } )  
+        se realiza la búsqueda or ( { $or: [ {},{} ] }, {project} )
+            en el project se especifica con 1 lo que quiero que aparezca en la búsqueda y con 0 lo que no.
+
+5. Mostrar las segundas 5 personas que sean de Argentina o Colombia, y el deporte sea Voley, y no hablen Portugues.
+
+    db.personas.find( {$or: [{pais: 'Argentina'},{pais: 'Colombia'}], deportes: 'voley', idioma: {$ne: 'Portuguese'}}).limit(5).skip(5)
+
+6. Eliminar los documentos cuyo país sea China, o no estén casados.
+
+    db.personas.find({ $or: [{pais: 'China'}, {casado: false}]})
+        para encontrarlas
+
+    db.personas.deleteMany({ $or: [{pais: 'China'}, {casado: false}] })
+

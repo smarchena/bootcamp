@@ -74,7 +74,7 @@ CONSULTAS
  - Obtener documentos que al menos una de las notas sea mayor a 4.5 y menor a 5 
     { notas: { $elemMatch: { $gt: 4.5, $lt: 5 } } }
 
- - Obtener docunentos cuyo ID sea igual a :
+ - Obtener documentos cuyo ID sea igual a :
    { _id: ObjectId('62466fe7c1233ba7045a9d4f') }
 
  - Obtener documentos que EXISTE el campo marca:
