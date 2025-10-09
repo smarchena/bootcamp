@@ -1,0 +1,280 @@
+//Productos
+//Clientes
+//Ventas
+
+
+//Colección: Productos
+{
+  "_id": "987AAB",
+  "nombre": "Celular",
+  "descripcion": "......",
+  "marca": "Apple",
+  "modelo": "Iphone 11",
+  "codigo": "CEL.APP.532",
+  "precio": 650.90,
+  "especificaciones": {
+    "memoria": "128Gb",
+    "color": "Gris Plata",
+    "pantalla": "12''",
+    "camara":{
+      "principal": "12Mpx",
+      "frontal": "10Mpx"
+    }
+  },
+  "stock": 10,
+  "accesorios":["cable USB", "cargador", "manos libres", "funda"]
+}
+
+//COLECCION: USUARIOS
+{
+  "_id": "555555",
+  "tipo": 112233, //hay 2 formas
+  "info_personal":{
+    "nombre": "Juana",
+    "apellido": "De Arco",
+    "correo": "juanaonfire@hotmail.com",
+    "tel": "12345666",
+    "direccion": {
+      "calle": "Av. Siemprevivas",
+      "numero": "456",
+      "apartarmento": "8 B",
+      "torre": "2",
+      "barrio": "mi barrio es el mejor",
+      "ciudad": "Armenia",
+      "estado": "Algo",
+      "pais": "Jamica",
+      "cp": "12312"
+    },
+    "fec_nac": "15/01/1985",
+    "sexo": "F",
+    "profesion": "Abogada",
+  },
+  "intereses": ["deportes", "ropa", "tecnología"],
+  "cuenta": {
+    "username": "Juana85",
+    "password": "hasdak1231kasjdla123.asd123",
+    "avatar": "miAvatar.png"
+  }
+}
+//COLECCIÓN: Ventas
+{
+  "fecha": "07/04/2022 23:35:45",
+  "cliente": "555555",
+  "productos":[
+    {
+      "producto": "987AAB",
+      "cantidad": 4,
+      "subtotal": 1653.90,
+      "iva": 5
+    },
+    {
+      "producto": "AAHH124",
+      "cantidad": 1,
+      "subtotal": 100,
+      "iva": 10
+    }
+  ],
+  "direccion_envio":{
+    "calle": "Av. Siemprevivas",
+    "numero": "456",
+    "apartarmento": "7 B",
+    "torre": "4",
+    "barrio": "mi barrio es el mejor",
+    "ciudad": "Armenia",
+    "estado": "Algo",
+    "pais": "Jamica",
+    "cp": "12312"
+  },
+  "pago": {
+    "metodo": "Tarjeta de Credito",
+    "numero_tarjeta": 12312312312312,
+    "codigo": 123,
+    "nombre_tarjeta": "Juan Perez",
+    "vencimiento": "14/10/2023"
+  },
+  "envio": true,
+  "costo_envio": 0,
+  "descuento": 25,
+  "total": 6233.90
+
+}
+
+//COLECCION: Tipo
+{
+  "_id": 112233,
+  "tipo": "Persona",
+  "descripcion": "Personas físicas que compran en la tienda online"
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Colección: Productos
+{
+  "_id": "987AAC",
+  "nombre": "Televisor",
+  "descripcion": "Experimenta una calidad de imagen real y colores vivos con una precisión cuatro veces superior a la de Full HD.",
+  "marca": "LG",
+  "modelo": "UHD TV",
+  "codigo": "TV.SYC.282",
+  "precio": 768.54,
+  "especificaciones": {
+    "color": "Negro",
+    "pantalla": "55''",
+    "resolucion": "4K ULTRA HD",
+    "tecnologia": ["Bluetooth", "Smart TV", "Wifi", "LED"],
+    "hecho": "Mexico",
+    "peso": "15.4kg",
+    "potenciaParlantes": "20W",
+    "tasaRefresco": "60Hz",
+    "procesador":"5AI Processor 4K"
+  },
+  "stock": 15,
+  "accesorios":["Cable HDMI", "Cable de poder", "Base", "Control remoto", "Manual de usuarios"],
+  "garantia":"1 año"
+}
+
+//Colección: Productos
+{
+  "_id": "987KXX",
+  "nombre": "Zapato",
+  "descripcion": "Expande tus límites. Sal del pavimento con estos tenis de trail running Terrex Agravic de adidas. Su tracción, soporte y comodidad te permiten caminar sobre terrenos suaves, rocosos e irregulares.",
+  "marca": "Adidas",
+  "modelo": "TRAIL RUNNING TERREX AGRAVIC",
+  "codigo": "SHOES.FIT.213",
+  "precio": 80.33,
+  "especificaciones": {
+    "color": "Core Black",
+    "talla": "40",
+    "horma": "clasica",
+    "peso": "0.3kg",
+    "mediasuela": "EVA",
+    "suela": "Traxion",
+    "exterior":"Malla ventilada de gran resistencia a la abrasion"
+  },
+  "stock": 20,
+  "beneficios":["AGARRE CONFIABLE", "TRANSPIRABLES", "IMPERMEABLES"],
+  "garantia":"6 meses",
+  "hecho": "Colombia"
+}
+
+//Colección: Productos
+{
+  "_id": "987GAM2",
+  "nombre": "Consola",
+  "descripcion": "Redescubre el significado de jugar con sus increíbles gráficos. Disfruta los beneficios de tener una Xbox y de llevarla en con Tecnología Movistar.",
+  "marca": "Xbox",
+  "modelo": "Xbox one series X",
+  "codigo": "CONSOLE.GAM.814",
+  "precio": 842.77,
+  "especificaciones": {
+    "color": "Black",
+    "almacenamiento" : "1 TERA",
+    "tipoMemoria": "GDDR6",
+    "edicion": "Halo Infinity",
+    "peso": "1kg",
+    "fps": 120,
+    "procesador":"AMD RYZEN ZEN 2",
+    "gpu":"AMD RADEON"
+  },
+  "stock": 35,
+  "garantia":"8 meses",
+  "accesorios":["Cable HDMI", "Cable de poder", "Control", "Manual de usuarios", "Juego Halo Infinity"],
+  "hecho": "USA"
+}
+
+//COLECCION: USUARIOS
+{
+  "_id": "51313212",
+  "tipo": 112233,
+  "info_personal":{
+    "nombre": "Juan",
+    "apellido": "Robayo",
+    "correo": "juanroba22@gmail.com",
+    "tel": "3123411",
+    "direccion": {
+      "calle": "Av. Pedregoza",
+      "numero": "423",
+      "apartarmento": "10 A",
+      "torre": "5",
+      "barrio": "Prado",
+      "ciudad": "Bogota",
+      "estado": "Bogota",
+      "pais": "Colombia",
+      "cp": "81283"
+    },
+    "fec_nac": "12/05/1990",
+    "sexo": "M",
+    "profesion": "Ingeniero"
+  },
+  "intereses": ["deportes", "tecnología"],
+  "cuenta": {
+    "username": "Juanroba22",
+    "password": "jasdjasdj233ksajdas",
+    "avatar": "miFoto.png"
+  }
+}
+
+//COLECCIÓN: Ventas
+{
+  "fecha": "08/04/2022 19:03:40",
+  "cliente": "51313212",
+  "productos":[
+    {
+      "producto": "987AAC",
+      "cantidad": 1,
+      "subtotal": 768.54,
+      "iva": 8
+    },
+    {
+      "producto": "987KXX",
+      "cantidad": 1,
+      "subtotal": 80.33,
+      "iva": 5
+    },
+    {
+      "producto": "987GAM2",
+      "cantidad": 1,
+      "subtotal": 842.77,
+      "iva": 8
+    }
+  ],
+  "direccion_envio":{
+    "calle": "Av. Pedregoza",
+    "numero": "456",
+    "apartarmento": "01 C",
+    "torre": "2",
+    "barrio": "Hipodromor",
+    "ciudad": "Cali",
+    "estado": "Valle del cauca",
+    "pais": "Colombia",
+    "cp": "812838"
+  },
+  "pago": {
+    "metodo": "Tarjeta debito",
+    "numero_tarjeta": 123214441232,
+    "codigo": 456,
+    "nombre_tarjeta": "Juan Robayo",
+    "vencimiento": "23/10/2025"
+  },
+  "envio": true,
+  "costo_envio": 10,
+  "cuponUtilizado": "ASHSH23SAJDSA332",
+  "descuentoCupon": 0.10,
+  "descuento": 172.26,
+  "total": 1550.38
+}
+
+
+{
+  "_id": 112233,
+  "tipo": "Persona",
+  "descripcion": "Personas físicas que compran en la tienda online"
+}
+
+//COLECCION: Tipo
+{
+  "_id": 556677,
+  "tipo": "Empresa",
+  "descripcion": "Empresas que compran y pueden acceder a precio mayorista"
+}
+
+
