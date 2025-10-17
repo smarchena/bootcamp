@@ -267,7 +267,6 @@ CRUD:
     Update
     Delete
 
-
 CREATE: 
     use nombreBaseDato
     db.collection.insertOne( {} ) / db.collection.insertMany( {}, {}, {} )
