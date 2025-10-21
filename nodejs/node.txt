@@ -1,8 +1,12 @@
 1. Para instalar nodese descarga desde la web https://nodejs.org 
 2. Se hace una doble comprobación en la consola: node -v y npm -v
 3. Se crea un package.json en el comando dentro de la carpeta: npm init
-4. Se arranca la apliación de node con el c omando: node index.js
-5. Se instala el package nodemon para reinicar el servidor cuando se hagan cambios: npm install nodemon (o npx nodemon index.js)
-6. Si se desea instalar el package Express se puede realizar por consola, con el comando: npm install express -save
+4. Se crea el archivo principal (main) del package.json
+5. Se arranca la aplicación de node con el comando: node index.js (se necesita instalar los paquetes o dependencias)
+6. Se instala el package nodemon para reinicar el servidor cuando se hagan cambios: npm install nodemon (o npx nodemon index.js)
+7. Si se desea instalar el package Express se puede realizar por consola, con el comando: npm install express -save
     Nota: generalmente no se sube a git los archivos (carpeta: node_modules, y archivo: package-lock.json), solo con el archivo package.json y el comando npm install ya se instala lo necesario.
-7. 
+8. Para poder enviar y manejar los datos en un formulario enviados por post: npm install body-parser (objeto  de petición)
+9. 
+
+

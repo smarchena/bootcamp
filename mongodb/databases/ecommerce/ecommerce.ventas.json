@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "68eabae1f3675c89c2cebeae"
+  },
+  "fecha": "11/10/2025 15:02:40",
+  "cliente": 51313212,
+  "productos": [
+    {
+      "producto": "987AAC",
+      "cantidad": 1,
+      "subtotal": 768.54,
+      "iva": 8
+    },
+    {
+      "producto": "987KXX",
+      "cantidad": 1,
+      "subtotal": 80.33,
+      "iva": 5
+    },
+    {
+      "producto": "987GAM2",
+      "cantidad": 1,
+      "subtotal": 842.77,
+      "iva": 8
+    },
+    {
+      "producto": "332G002",
+      "cantidad": 1,
+      "subtotal": 300.99,
+      "iva": 19
+    }
+  ],
+  "direccion_envio": {
+    "calle": "Av. Pedregoza",
+    "numero": 456,
+    "apartamento": "01 C",
+    "torre": 2,
+    "barrio": "Hipodromo",
+    "ciudad": "Soledad",
+    "estado": "Atlantico",
+    "pais": "Colombia",
+    "zip": 812838
+  },
+  "pago": {
+    "metodo": "Tarjeta débito",
+    "numero_tarjeta": 123214441232,
+    "codigo": 456,
+    "nombre_tarjeta": "Juan Robayo",
+    "vencimiento": "23/10/2027"
+  },
+  "envio": true,
+  "costo_envio": 10,
+  "cuponUtilizado": "ASDFGHJKL",
+  "descuentoCupon": 10,
+  "descuento": 199.26,
+  "total": 1992.63
+}]

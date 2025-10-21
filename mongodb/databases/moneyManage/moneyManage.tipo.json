@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "68ead1cfede93cfd87cebea5"
+  },
+  "id": "egreso",
+  "descripcion": "Salida de dinero en diferentes categorías"
+},
+{
+  "_id": {
+    "$oid": "68ead1cfede93cfd87cebea4"
+  },
+  "id": "ingreso",
+  "descripcion": "Entrada de dinero de diferentes medios"
+}]

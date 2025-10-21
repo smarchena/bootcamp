@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "68d1fc85c497d048d2cebeb9"
+  },
+  "nombre": "Shady",
+  "id": "003",
+  "plan": "Semestral",
+  "clase": "Rumbaterapia",
+  "precio": "$162 USD"
+}]

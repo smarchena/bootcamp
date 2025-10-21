@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "68ed452aec47cfc676cebeab"
+  },
+  "concepto": "Salida al cine",
+  "categoria": "68ed418aec47cfc676cebea7",
+  "monto": 10000,
+  "tipo": "egreso",
+  "detalle": "Este gasto fue el dia que salimos con mi novia a ver una película de Stallone",
+  "etiqueta": [
+    "cine",
+    "salida",
+    "diversion",
+    "pareja"
+  ],
+  "fecha": "08/04/2022",
+  "metodoPago": "Efectivo"
+},
+{
+  "_id": {
+    "$oid": "68ed452aec47cfc676cebeac"
+  },
+  "concepto": "Sueldo",
+  "categoria": "68ed418aec47cfc676cebea5",
+  "monto": 150000,
+  "tipo": "ingreso",
+  "detalle": "Sueldo del mes de Enero 2022",
+  "etiqueta": [
+    "trabajo",
+    "sueldo"
+  ],
+  "fecha": "20/10/2022",
+  "metodoPago": "transferencia"
+},
+{
+  "_id": {
+    "$oid": "68ed452aec47cfc676cebead"
+  },
+  "concepto": "Renta departamento",
+  "categoria": "68ed418aec47cfc676cebea7",
+  "monto": 75000,
+  "tipo": "egreso",
+  "detalle": "Renta del mes de Marzo",
+  "etiqueta": [
+    "alquiler",
+    "renta",
+    "casa",
+    "departamento"
+  ],
+  "fecha": "01/04/2022",
+  "metodoPago": "transferencia"
+},
+{
+  "_id": {
+    "$oid": "68ed452aec47cfc676cebeae"
+  },
+  "concepto": "Sueldo mes de Diciembre 2021",
+  "categoria": "68ed418aec47cfc676cebea5",
+  "monto": 150000,
+  "tipo": "ingreso",
+  "detalle": "Lo que cobre del trabajo que le hice a Juan Zaratata",
+  "etiquetas": [
+    "frelance",
+    "sueldo",
+    "trabajo",
+    "cliente"
+  ],
+  "fecha": "02/01/2022",
+  "metodoPago": "transferencia"
+}]

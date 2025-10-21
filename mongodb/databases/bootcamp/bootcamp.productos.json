@@ -1,0 +1,171 @@
+[{
+  "_id": {
+    "$oid": "68c4df63b9e80beacf79a8c9"
+  },
+  "nombre": "Celular",
+  "precio": 10000,
+  "marca": "Apple"
+},
+{
+  "_id": {
+    "$oid": "68c4dfd8b9e80beacf79a8cb"
+  },
+  "nombre": "Zapatos",
+  "categoría": "Calzado",
+  "precio": 450,
+  "color": "Negro"
+},
+{
+  "_id": {
+    "$oid": "68c88a2fa4cd6487ee2346df"
+  },
+  "nombre": "Computadoras",
+  "precio": 5000,
+  "modelo": "HP",
+  "color": "negro",
+  "capacidad": "500 GB"
+},
+{
+  "_id": {
+    "$oid": "68c88a77a4cd6487ee2346e1"
+  },
+  "nombre": "Cuadros",
+  "precio": 500,
+  "autor": "Da Vinci",
+  "modelo": "Florado"
+},
+{
+  "_id": {
+    "$oid": "68c88aeea4cd6487ee2346e3"
+  },
+  "nombre": "Cama",
+  "tamaño": "King 12x12",
+  "color": "Blanco",
+  "modelo": "Ortopédico"
+},
+{
+  "_id": {
+    "$oid": "68c88b3ea4cd6487ee2346e5"
+  },
+  "nombre": "Postres",
+  "precio": 100,
+  "tipo": "Chocolate",
+  "peso": "12 oz"
+},
+{
+  "_id": {
+    "$oid": "68c88b7ea4cd6487ee2346e7"
+  },
+  "nombre": "Camisas",
+  "precio": 40,
+  "marca": "Nike",
+  "modelo": "Airforce"
+},
+{
+  "_id": {
+    "$oid": "68c88bbaa4cd6487ee2346e9"
+  },
+  "nombre": "Carros",
+  "precio": 30000,
+  "modelo": 2025,
+  "marca": "BMW"
+},
+{
+  "_id": {
+    "$oid": "68c88bfda4cd6487ee2346eb"
+  },
+  "nombre": "Teléfono",
+  "marca": "Apple",
+  "modelo": "Iphone 16 Pro Max",
+  "precio": 18000
+},
+{
+  "_id": {
+    "$oid": "68c88c35a4cd6487ee2346ed"
+  },
+  "nombre": "Juguete",
+  "tipo": "Barbie",
+  "precio": 1000,
+  "modelo": 2010
+},
+{
+  "_id": {
+    "$oid": "68c88d6ba4cd6487ee2346ef"
+  },
+  "nombre": "Colores",
+  "precio": 400,
+  "marca": "Prismacolor"
+},
+{
+  "_id": {
+    "$oid": "68c88eada4cd6487ee2346f1"
+  },
+  "nombre": "Reloj",
+  "precio": 2000,
+  "marca": "Rolex",
+  "modelo": "2020"
+},
+{
+  "_id": {
+    "$oid": "68cf5e8e27ca56855ccebea4"
+  },
+  "nombre": "TV",
+  "marca": "LG",
+  "precio": 5000,
+  "nuevo": true
+},
+{
+  "_id": {
+    "$oid": "68cf5f5127ca56855ccebea5"
+  },
+  "nombre": "Laptop",
+  "marca": "Lenovo",
+  "precio": 7000,
+  "color": "Negro"
+},
+{
+  "_id": {
+    "$oid": "68cf5f9c27ca56855ccebea6"
+  },
+  "nombre": "Nevera",
+  "marca": "Mabe",
+  "precio": 10000,
+  "color": "Plateado",
+  "nuevo": true
+},
+{
+  "_id": {
+    "$oid": "68cf5fd427ca56855ccebea7"
+  },
+  "nombre": "Ventilador",
+  "marca": "Samurai",
+  "color": "Negro",
+  "precio": 2000
+},
+{
+  "_id": {
+    "$oid": "68cf63b227ca56855ccebea8"
+  },
+  "nombre": "Pantalón",
+  "marca": "Chevignon",
+  "color": "Blue",
+  "precio": 1000
+},
+{
+  "_id": {
+    "$oid": "68cf63b227ca56855ccebea9"
+  },
+  "nombre": "Camisa",
+  "marca": "Pilatos",
+  "color": "Blanca",
+  "precio": 2000
+},
+{
+  "_id": {
+    "$oid": "68cf63b227ca56855ccebeaa"
+  },
+  "nombre": "Zapatos",
+  "marca": "Ocean Pacific",
+  "color": "Gris",
+  "precio": 3000
+}]

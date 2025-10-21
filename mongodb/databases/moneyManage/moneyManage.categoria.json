@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebea4"
+  },
+  "nombre": "shopping",
+  "tipo": "gastos"
+},
+{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebea5"
+  },
+  "nombre": "sueldo",
+  "tipo": "ingresos"
+},
+{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebea6"
+  },
+  "nombre": "servicios",
+  "tipo": "gastos"
+},
+{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebea7"
+  },
+  "nombre": "varios",
+  "tipo": "gastos"
+},
+{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebea8"
+  },
+  "nombre": "varios",
+  "tipo": "gastos"
+},
+{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebea9"
+  },
+  "nombre": "inversiones",
+  "tipo": "ingresos"
+},
+{
+  "_id": {
+    "$oid": "68ed418aec47cfc676cebeaa"
+  },
+  "nombre": "regalos",
+  "tipo": "gastos"
+}]

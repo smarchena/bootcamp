@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "68d1f863c497d048d2cebeb0"
+  },
+  "nombre": "Juan",
+  "id": "006",
+  "plan": "Semestral",
+  "clase": "Musculacion",
+  "precio": "$162 USD"
+},
+{
+  "_id": {
+    "$oid": "68d1f863c497d048d2cebeaf"
+  },
+  "nombre": "Angie",
+  "id": "002",
+  "plan": "Anual",
+  "clase": "Musculacion",
+  "precio": "$225 USD"
+},
+{
+  "_id": {
+    "$oid": "68d1f863c497d048d2cebeae"
+  },
+  "nombre": "Santiago",
+  "id": "001",
+  "plan": "Mensual",
+  "clase": "Musculacion",
+  "precio": "$30 USD"
+},
+{
+  "_id": {
+    "$oid": "68d1f863c497d048d2cebeb1"
+  },
+  "nombre": "William",
+  "id": "007",
+  "plan": "Mensual",
+  "clase": "Musculacion",
+  "precio": "$30 USD"
+}]

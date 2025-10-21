@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "68d1fb9fc497d048d2cebeb6"
+  },
+  "nombre": "Andres",
+  "id": "004",
+  "plan": "Anual",
+  "precio": "$225 USD",
+  "clase": "Crossfit"
+},
+{
+  "_id": {
+    "$oid": "68d1fb9fc497d048d2cebeb7"
+  },
+  "nombre": "Jose",
+  "id": "005",
+  "plan": "Anual",
+  "precio": "$225 USD",
+  "clase": "Crossfit"
+}]

@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "68eab6e4f3675c89c2cebeab"
+  },
+  "id": 51313212,
+  "tipo": 112233,
+  "info_personal": {
+    "nombre": "Juan",
+    "apellido": "Robayo",
+    "correo": "juanroba22@gmail.com",
+    "tel": 312341100,
+    "direccion": {
+      "calle": "Av. Pedregoza",
+      "numero": 423,
+      "apartamento": "10A",
+      "torre": 5,
+      "barrio": "Prado",
+      "ciudad": "Bogota",
+      "pais": "Colombia",
+      "zip": 81283
+    },
+    "fec_nac": "12/05/1990",
+    "sexo": "M",
+    "profesion": "Ingeniero"
+  },
+  "intereses": [
+    "Deportes",
+    "Tecnología"
+  ],
+  "cuenta": {
+    "username": "Juanroba22",
+    "password": "juan12$dsdfgdfd",
+    "avatar": "miFoto.png"
+  }
+}]

@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "68eaaa90f3675c89c2cebea7"
+  },
+  "id": "9877AAC",
+  "nombre": "Televisor",
+  "descripcion": "Experimenta una calidad de imagen real y colores vivos con una precisión cuatro veces superior a la de Full HD.",
+  "marca": "LG",
+  "modelo": "UHD TV",
+  "codigo": "TV.SYC.282",
+  "precio": 768.54,
+  "especificaciones": {
+    "color": "Negro",
+    "pantalla": "55\"",
+    "resolucion": "4K ULTRA HD",
+    "tecnologia": [
+      "Bluetooth",
+      "Smart TV",
+      "WiFi",
+      "LED"
+    ],
+    "hecho": "Mexico",
+    "peso": "15,4 kg",
+    "potenciaParlantes": "20W",
+    "tasaRefresco": "60 Hz",
+    "procesador": "5AI Processor 4K"
+  },
+  "stock": 15,
+  "accesorios": [
+    "Cable HDMI",
+    "Cable de poder",
+    "Base",
+    "Control remoto",
+    "Manual de usuarios"
+  ],
+  "garantia": "1 año"
+},
+{
+  "_id": {
+    "$oid": "68eaaa90f3675c89c2cebea8"
+  },
+  "id": "987KXX",
+  "nombre": "Zapato",
+  "descripcion": "Expande tus límites. Sal del pavimento con estos tenis de trail running Terrex Agravic de adidas. Su tracción, soporte y comodidad te permiten caminar sobre terrenos suaves, rocosos e irregulares.",
+  "marca": "Adidas",
+  "modelo": "TRAIL RUNNING TERREX AGRAVIC",
+  "codigo": "SHOES.FIT.213",
+  "precio": 80.33,
+  "especificaciones": {
+    "color": "Core Black",
+    "talla": 40,
+    "horma": "clasica",
+    "peso": "0.3 kg",
+    "mediasuela": "EVA",
+    "suela": "Traxion",
+    "exterior": "Malla ventilada de gran resistencia a la abrasion."
+  },
+  "stock": 20,
+  "beneficios": [
+    "AGARRE CONFIABLE",
+    "TRANSPIRABLES",
+    "IMPERMEABLES"
+  ],
+  "garantia": "6 meses",
+  "hecho": "Colombia"
+},
+{
+  "_id": {
+    "$oid": "68eaae53f3675c89c2cebea9"
+  },
+  "id": "987GAM2",
+  "nombre": "Consola",
+  "descripcion": "Redescubre el significado de jugar con sus increíbles gráficos. Disfruta los beneficios de tener una Xbox y de llevarla en con Tecnología Movistar.",
+  "marca": "Xbox",
+  "modelo": "Xbox One Series X",
+  "codigo": "CONSOLE.GAM.814",
+  "precio": 842.77,
+  "especificaciones": {
+    "color": "Black",
+    "almacenamiento": "1 Tera",
+    "tipoMemoria": "GDDR6",
+    "edicion": "Halo Infinity",
+    "peso": "1 kg",
+    "fps": 120,
+    "procesador": "AMD Ryzen Zen 2",
+    "gpu": "AMD Radeon"
+  },
+  "stock": 35,
+  "garantia": "8 meses",
+  "accesorios": [
+    "Cable HDMI",
+    "Cable de poder",
+    "Control",
+    "Manual de usuarios",
+    "Juego Halo Infinity"
+  ],
+  "hecho": "USA"
+},
+{
+  "_id": {
+    "$oid": "68eaae53f3675c89c2cebeaa"
+  },
+  "id": "332G002",
+  "nombre": "Jean",
+  "descripcion": "Jean Relaxed Fit Tiro Alto Boot Cut Azul Ultra Medio Lavado Vintage para Hombre.",
+  "marca": "Chevignon",
+  "modelo": "Relaxed Fit",
+  "codigo": "JEANRF",
+  "precio": 300.99,
+  "especificaciones": {
+    "color": "Blue",
+    "talla": 32,
+    "horma": "clasica",
+    "exterior": "Malla ventilada de gran resistencia a la abrasión.",
+    "composicion": "Prenda: 99% algodón, 1% elastano",
+    "fit": "Relaxed fit"
+  },
+  "stock": 20,
+  "hecho": "Colombia"
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "68eab785f3675c89c2cebeac"
+  },
+  "id": 112233,
+  "tipo": "Persona",
+  "descripcion": "Personas físicas que compran en la tienda online"
+},
+{
+  "_id": {
+    "$oid": "68eab785f3675c89c2cebead"
+  },
+  "id": 556677,
+  "tipo": "Empresa",
+  "descripcion": "Empresas que compran y pueden acceder a precio mayorista"
+}]

@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "68ce0d3df3dcf2025fc9934b"
+  },
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "año": 2025,
+  "color": "Negro",
+  "kilometraje": "0 km",
+  "estado": "nuevo",
+  "precio": 30000
+},
+{
+  "_id": {
+    "$oid": "68ce0d5ff3dcf2025fc9934d"
+  },
+  "marca": "Chevrolet",
+  "modelo": "Spark",
+  "año": 2014,
+  "color": "Negro",
+  "kilometraje": "17000 km",
+  "estado": "usado",
+  "precio": 10000
+},
+{
+  "_id": {
+    "$oid": "68ce0d9ef3dcf2025fc9934f"
+  },
+  "marca": "Volskwagen",
+  "modelo": "Jetta",
+  "año": 2010,
+  "color": "Plateado",
+  "kilometraje": "90000 km",
+  "estado": "Mantenimiento",
+  "precio": 15000
+},
+{
+  "_id": {
+    "$oid": "68ce0db0f3dcf2025fc99351"
+  },
+  "marca": "Toyota",
+  "modelo": "TXL",
+  "año": 2025,
+  "color": "Negro",
+  "kilometraje": "0 km",
+  "estado": "nuevo",
+  "precio": 80000
+},
+{
+  "_id": {
+    "$oid": "68ce0dd3f3dcf2025fc99353"
+  },
+  "marca": "Nissan",
+  "modelo": "Sentra",
+  "año": 2008,
+  "color": "Rojo",
+  "kilometraje": "20000 km",
+  "estado": "usado",
+  "precio": 7000
+},
+{
+  "_id": {
+    "$oid": "68ce0dfaf3dcf2025fc99355"
+  },
+  "marca": "Ford",
+  "modelo": "Explorer",
+  "año": 2025,
+  "color": "Negro",
+  "kilometraje": "0 km",
+  "estado": "nuevo",
+  "precio": 50000
+},
+{
+  "_id": {
+    "$oid": "68ce0f81f3dcf2025fc99357"
+  },
+  "marca": "Peugeot",
+  "modelo": "Novo",
+  "año": 2022,
+  "color": "Negro",
+  "kilometraje": "0 km",
+  "estado": "nuevo",
+  "precio": 30000,
+  "fecha": "15-09-2025"
+},
+{
+  "_id": {
+    "$oid": "68ce1069f3dcf2025fc9935a"
+  },
+  "marca": "Fiat",
+  "modelo": "Novo",
+  "fecha": "13-08-2025",
+  "color": "Rojo",
+  "kilometraje": "0 km",
+  "precio": 4000
+}]

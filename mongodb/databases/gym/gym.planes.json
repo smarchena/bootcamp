@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "68d1faa2c497d048d2cebeb2"
+  },
+  "nombre": "Santiago",
+  "id": "001",
+  "plan": "Mensual",
+  "precio": "$30 USD",
+  "clase": "Musculacion",
+  "descuento": "No tiene descuento aplicado"
+},
+{
+  "_id": {
+    "$oid": "68d1faa2c497d048d2cebeb3"
+  },
+  "nombre": "Juan",
+  "id": "006",
+  "plan": "Anual",
+  "precio": "$225 USD",
+  "clase": "Musculacion",
+  "descuento": "25% del valor total"
+},
+{
+  "_id": {
+    "$oid": "68d1faa2c497d048d2cebeb4"
+  },
+  "nombre": "Angie",
+  "id": "002",
+  "plan": "Anual",
+  "precio": "$225 USD",
+  "clase": "Musculacion",
+  "descuento": "25% del valor total"
+},
+{
+  "_id": {
+    "$oid": "68d1faa2c497d048d2cebeb5"
+  },
+  "nombre": "William",
+  "id": "007",
+  "plan": "Mensual",
+  "precio": "$30 USD",
+  "clase": "Musculacion",
+  "descuento": "No tiene descuento aplicado"
+},
+{
+  "_id": {
+    "$oid": "68d1fc4fc497d048d2cebeb8"
+  },
+  "nombre": "Shady",
+  "id": "003",
+  "plan": "Semestral",
+  "precio": "$162 USD",
+  "clase": "Rumbaterapia",
+  "descuento": "10% del valor total"
+},
+{
+  "_id": {
+    "$oid": "68d1fd45c497d048d2cebeba"
+  },
+  "nombre": "Andres",
+  "id": "004",
+  "plan": "Anual",
+  "precio": "$225 USD",
+  "clase": "Crossfit",
+  "descuento": "25% del valor total"
+},
+{
+  "_id": {
+    "$oid": "68d1fd45c497d048d2cebebb"
+  },
+  "nombre": "Jose",
+  "id": "005",
+  "plan": "Anual",
+  "precio": "$225 USD",
+  "clase": "Crossfit",
+  "descuento": "25% del valor total"
+}]

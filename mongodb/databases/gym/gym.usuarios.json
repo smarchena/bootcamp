@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "68d1f4fec497d048d2cebea7"
+  },
+  "nombre": "Santiago",
+  "id": "001",
+  "edad": 27,
+  "plan": "Mensual",
+  "clase": "Musculacion"
+},
+{
+  "_id": {
+    "$oid": "68d1f5e4c497d048d2cebea8"
+  },
+  "nombre": "Angie",
+  "id": "002",
+  "edad": 24,
+  "plan": "Anual",
+  "clase": "Musculacion"
+},
+{
+  "_id": {
+    "$oid": "68d1f5fbc497d048d2cebea9"
+  },
+  "nombre": "Shady",
+  "id": "003",
+  "edad": 15,
+  "plan": "Semestral",
+  "clase": "Rumbaterapia"
+},
+{
+  "_id": {
+    "$oid": "68d1f613c497d048d2cebeaa"
+  },
+  "nombre": "Andres",
+  "id": "004",
+  "edad": 27,
+  "plan": "Anual",
+  "clase": "Crossfit"
+},
+{
+  "_id": {
+    "$oid": "68d1f620c497d048d2cebeab"
+  },
+  "nombre": "Jose",
+  "id": "005",
+  "edad": 27,
+  "plan": "Anual",
+  "clase": "Crossfit"
+},
+{
+  "_id": {
+    "$oid": "68d1f633c497d048d2cebeac"
+  },
+  "nombre": "Juan",
+  "id": "006",
+  "edad": 27,
+  "plan": "Semestral",
+  "clase": "Musculacion"
+},
+{
+  "_id": {
+    "$oid": "68d1f650c497d048d2cebead"
+  },
+  "nombre": "William",
+  "id": "007",
+  "edad": 27,
+  "plan": "Mensual",
+  "clase": "Musculacion"
+}]
