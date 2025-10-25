@@ -7,7 +7,7 @@ var bodyParser = require('body-parser')
 // Configuración
 app.use(bodyParser.urlencoded({ extended: true })) // se hace uso del middleware 'body-parser'
 
-//Rutas
+//Rutas: (son lo que el servidor entiende que el cliente puede llegar a pedirle)
 app.get('/inicio', function (req, res) {
     res.sendFile(__dirname + '/formulario.html')
 })

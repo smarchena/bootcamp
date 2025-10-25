@@ -33,13 +33,13 @@ var express = require('express')
 var app = express()
 
 //enviamos nuestro index.html al cliente como página de inicio
-app.get('/inicio', function(req, res) {
+app.get('/inicio', function (req, res) {
     console.log('Alguien ingresó al sitio a la dirección localhost:3000/inicio')
     res.sendFile(__dirname + '/index.html')
 })
 
 //Ejercicio: enviamos contactos.html al cliente como página de contactos
-app.get('/contactos', function(req, res) { 
+app.get('/contactos', function (req, res) {
     console.log('Alguien ingresó al sitio a la dirección localhost:3000/contactos')
     res.sendFile(__dirname + '/contactos.html')
 })
