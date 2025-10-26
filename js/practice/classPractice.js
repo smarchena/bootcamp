@@ -15,7 +15,7 @@ Realizar = pasos para comprar un producto en MercadoLibre
 Inicio
 	1. Ingresar a la página: www.mercadolibre.com
 	2. Buscar el producto
-    3. Si existe el producto
+	3. Si existe el producto
 		3.1 Ingresar en el detalle del producto
 		3.2 Hacer clic en el botón COMPRAR
 		3.3 Si estamos logueados
@@ -61,90 +61,90 @@ nombre = 25;
 var numero;
 numero = 1;
 
-if (numero < 3){
-    alert('El número es menor a 3');
-}else{
+if (numero < 3) {
+	alert('El número es menor a 3');
+} else {
 	alert('el número es mayor a 3');
 }
 
 var texto;
 texto = 'hola';
 
-if (texto == 'hola'){
-    alert('El texto es HOLA');
-}else{
-    alert('El número es mayor a 3');
+if (texto == 'hola') {
+	alert('El texto es HOLA');
+} else {
+	alert('El número es mayor a 3');
 }
 
 
-if (numero == 2){
+if (numero == 2) {
 	alert('El número es igual a 2');
-}else if(numero ==3){
+} else if (numero == 3) {
 	alert('El número es igual a 3');
-}else if(numero > 3){
+} else if (numero > 3) {
 	alert('El número es más grande que 3');
 }
 
 // ES LO MISMO QUE SI DIGO QUE:
-if (numero == 2){
+if (numero == 2) {
 	alert('El número es igual a 2');
-}else{
-	if(numero ==3){
-  alert('El número es igual a 3');
-	}else{
-  	if(numero > 3){
-    alert('El número es más grande que 3');
-    }
-  }
+} else {
+	if (numero == 3) {
+		alert('El número es igual a 3');
+	} else {
+		if (numero > 3) {
+			alert('El número es más grande que 3');
+		}
+	}
 }
 
 // EJERCICIO: Mostrar un alert cuando número = 44 y texto = a chau.
 var numero = 44;
 var texto = 'chau';
 
-if(numero == 44){
+if (numero == 44) {
 	alert('El número es igual a 44');
 }
 
-if(texto == 'chau'){
-  	alert('El texto es "chau"');
+if (texto == 'chau') {
+	alert('El texto es "chau"');
 }
 
 //OPCION 1:
-if(numero == 44){
-    if(texto == 'chau'){
-        alert('El número es igual a 44 y el texto es igual a "chau"');
-    }
-}else{
-    alert('No son iguales.');
+if (numero == 44) {
+	if (texto == 'chau') {
+		alert('El número es igual a 44 y el texto es igual a "chau"');
+	}
+} else {
+	alert('No son iguales.');
 }
 
 // MENÚ DE SOPAS
 var texto = prompt('Ingrese el día de la semana para saber el menú de sopas:').toLowerCase();
 switch (texto) {
-  case 'lunes':
-    alert('La sopa del lunes es de: Mondongo');
-    break;
-  case 'martes':
-    alert('La sopa del martes es de: Pescado');
-    break;
-  case 'miercoles':
-    alert('La sopa del miércoles es de: Pollo');
-    break;
-  case 'jueves':
-    alert('La sopa del jueves es de: Verduras');
-    break;
-  case 'viernes':
-    alert('La sopa del viernes es de: Lentejas');
-    break;
-  case 'sabado':
-    alert('La sopa del sábado es de: Res');
-    break;
-  case 'domingo':
-    alert('La sopa del domingo es de: Sopa de fideo');
-    break;
-  default:
-    alert('Día no válido');
+	case 'lunes':
+		alert('La sopa del lunes es de: Mondongo');
+		break;
+	case 'martes':
+		alert('La sopa del martes es de: Pescado');
+		break;
+	case 'miercoles':
+		alert('La sopa del miércoles es de: Pollo');
+		break;
+	case 'jueves':
+		alert('La sopa del jueves es de: Verduras');
+		break;
+	case 'viernes':
+		alert('La sopa del viernes es de: Lentejas');
+		break;
+	case 'sabado':
+		alert('La sopa del sábado es de: Res');
+		break;
+	case 'domingo':
+		alert('La sopa del domingo es de: Sopa de fideo');
+		break;
+	default:
+		alert('Día no válido');
 }
 
 //Según 2 variables, intercambia los valooes de ambas y mostrarlos en un alert.
@@ -154,34 +154,34 @@ var c = a;
 
 a = b;
 b = c;
-alert('El nuevo valor de "a" es: '+ a + ' y el nuevo valor de "b" es: ' + b);
+alert('El nuevo valor de "a" es: ' + a + ' y el nuevo valor de "b" es: ' + b);
 
 /* Hacer una calculadora que segun dos números realice operaciones matemáticas correspondientes:(+,-,*,/)
-	y muestre el resultado con un alert. [con numero1 y numero2] PAUTA: prompt('Ingrese el primer número:') */ 
-	
+	y muestre el resultado con un alert. [con numero1 y numero2] PAUTA: prompt('Ingrese el primer número:') */
+
 alert('***	Bienvenido a su calculadora digital ;)	***');
 var a = parseFloat(prompt('Ingrese primer número a operar:'));
 var b = parseFloat(prompt('Ingrese segundo número a operar:'));
 var operation = prompt('Ingrese el signo correspondiente de la operación a realizar: (+,-,*,/)');
-var resul; 
+var resul;
 
-if(operation == '+'){
+if (operation == '+') {
 	resul = a + b;
 	alert('El resultado de la suma es: ' + resul);
-}else if(operation == '-'){
+} else if (operation == '-') {
 	resul = a - b;
-  	alert('El resultado de la resta es: ' + resul);
-}else if(operation == '*'){
+	alert('El resultado de la resta es: ' + resul);
+} else if (operation == '*') {
 	resul = a * b;
-   	alert('El resultado de la multiplicación es: ' + resul);
-}else if(operation == '/'){
-	if(b == 0){
+	alert('El resultado de la multiplicación es: ' + resul);
+} else if (operation == '/') {
+	if (b == 0) {
 		alert("El resultado es indeterminado.");
-	}else{
+	} else {
 		resul = a / b;
 		alert('El resultado de la división es: ' + resul);
-		}    			
-}else if(operation !== '+','-','*','/'){
+	}
+} else if (operation !== '+', '-', '*', '/') {
 	alert('No es un signo correspondiente.');
 }
 
@@ -191,22 +191,22 @@ let a = parseFloat(prompt('Ingrese un número: '));
 let b = parseFloat(prompt('Ingrese un número: '));
 let c = parseFloat(prompt('Ingrese un número: '));
 
-if(a>=b){
-	if(b>=c){
+if (a >= b) {
+	if (b >= c) {
 		alert('El número mayor es: ' + a + ' y el número menor es: ' + c);
-	}else{
+	} else {
 		alert('El número mayor es: ' + a + ' y el número menor es: ' + b);
 	}
-}else if(b>=c){
-	if(c>=a){
+} else if (b >= c) {
+	if (c >= a) {
 		alert('El número mayor es: ' + b + ' y el número menor es: ' + a);
-	}else{
+	} else {
 		alert('El número mayor es: ' + b + ' y el número menor es: ' + c);
 	}
-}else if(c>=b){
-	if(b>=a){
+} else if (c >= b) {
+	if (b >= a) {
 		alert('El número mayor es: ' + c + ' y el número menor es: ' + a);
-	}else{
+	} else {
 		alert('El número mayor es: ' + c + ' y el número menor es: ' + b);
 	}
 }

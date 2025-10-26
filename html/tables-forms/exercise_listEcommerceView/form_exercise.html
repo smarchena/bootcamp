@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Shop</title>
     <link rel="stylesheet" href="./style_exercise.css">
-</head>           
-    
+</head>
+
 <body>
     <br><br><img src="./img/smlogo.png" alt="" width="600">
-    <br><h1>-SM SHOP ECOMMERCE-</h1>
+    <br>
+    <h1>-SM SHOP ECOMMERCE-</h1>
     <h3><em>Everything in one place.</em> </h3><br>
     <p>Rellenar todos los campos para proceder con la órden. </p>
     <form>
-            <select name="type" required>
-                <option value="default" selected disabled>Tipo de artículo</option>
-                <option value="Shirts">Camisa</option>
-                <option value="Pants">Pantalón</option>
-                <option value="Shoes">Zapatos</option>
-            </select> 
+        <select name="type" required>
+            <option value="default" selected disabled>Tipo de artículo</option>
+            <option value="Shirts">Camisa</option>
+            <option value="Pants">Pantalón</option>
+            <option value="Shoes">Zapatos</option>
+        </select>
 
-            <select name="model" required>
-                <option value="default" selected disabled>Marca</option>
-                <option value="model_nike">Nike</option>
-                <option value="model_adidas">Adidas</option>
-                <option value="model_puma">Puma</option>
-            </select><br> <br>
+        <select name="model" required>
+            <option value="default" selected disabled>Marca</option>
+            <option value="model_nike">Nike</option>
+            <option value="model_adidas">Adidas</option>
+            <option value="model_puma">Puma</option>
+        </select><br> <br>
 
         <strong>Código: </strong>
         <input type="text" placeholder="Escriba código del artículo" size="18" maxlength="4">
         <strong>Cantidad: </strong><input type="number" placeholder="Cant" min="1" max="10" required> <br><br>
         <strong>Seleccione color: </strong>
 
-            <select name="color">
-                <option value="default" selected disabled>Color</option>
-                <option value="White">Blanco</option>
-                <option value="Black">Negro</option>
-                <option value="Red">Rojo</option>
-                <option value="Blue">Azul</option>
-            </select><br><br>
+        <select name="color">
+            <option value="default" selected disabled>Color</option>
+            <option value="White">Blanco</option>
+            <option value="Black">Negro</option>
+            <option value="Red">Rojo</option>
+            <option value="Blue">Azul</option>
+        </select><br><br>
 
-        <strong>Escriba talla: </strong><input type="text" placeholder="Talla" size="1" minlength="1" maxlength="4" required> <br><br>
+        <strong>Escriba talla: </strong><input type="text" placeholder="Talla" size="1" minlength="1" maxlength="4"
+            required> <br><br>
         <strong>Dirección: </strong><input type="text" placeholder="Escriba dirección de envío"> <br><br>
         <textarea name="coments" id="" placeholder="Ingrese comentarios"></textarea> <br>
         <h5>MEDIOS DE PAGO:</h5>
@@ -48,11 +51,12 @@
         <input type="image" src="./img/daviplata.png" alt="" width="70">
         <input type="image" src="./img/nequi.png" alt="" width="70">
         <input type="image" src="./img/efecty.png" alt="" width="70">
-        <input type="image" src="./img/westernUnion.png" alt="" width="130">        
-        
+        <input type="image" src="./img/westernUnion.png" alt="" width="130">
+
         <br><br><button type="send">Enviar</button>
         <button type="reset">Borrar</button>
     </form>
-    
+
 </body>
+
 </html>

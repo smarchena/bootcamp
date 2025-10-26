@@ -25,7 +25,7 @@ parr.innerText = "Ahora dice otra cosa";
 var p = document.getElementById("parrafo");
 
 // ESCUCHAR EL EVENTO QUE NECESITAMOS (Click)
-p.addEventListener("click", function(){
+p.addEventListener("click", function () {
     alert('Hiciste click en el elemento');
     var suma = 1 + 3;
     alert('La suma es ' + suma)
@@ -36,8 +36,8 @@ p.addEventListener("click", function(){
 
 var boton = document.getElementById("boton");
 
-boton.addEventListener("click", function(){
-    alert("Usted es el ganador por hacer click en el botón!! ;) ");    
+boton.addEventListener("click", function () {
+    alert("Usted es el ganador por hacer click en el botón!! ;) ");
 });
 
 
@@ -46,10 +46,10 @@ boton.addEventListener("click", function(){
 var btn = document.getElementById('boton2');
 var input = document.getElementById('nombre');
 
-btn.addEventListener("click", function(){    
+btn.addEventListener("click", function () {
     var valor_input = input.value;
     alert('El dato ingresado es: ' + valor_input.toUpperCase());
-    input.value = "";    
+    input.value = "";
 });
 
 // EJERCICIO 2: CREAR DOS INPUTS Y UN BOTÓN. AL HACER CLIC EN EL BOTÓN SUMAR LOS VALORES DE LOS INPUTS.
@@ -58,18 +58,18 @@ var numero1 = document.getElementById('number1');
 var numero2 = document.getElementById('number2');
 var botonazo = document.getElementById('boton3');
 
-botonazo.addEventListener("click", function(){
+botonazo.addEventListener("click", function () {
     var suma2 = parseFloat(numero1.value) + parseFloat(numero2.value);
     alert('La suma de los números ingresados es: ' + suma2);
 });
 
 // ejemplo del profesor:
-function sumar_numeros(a, b){
+function sumar_numeros(a, b) {
     var resultado = parseFloat(a) + parseFloat(b);
     return resultado;
 }
 
-botonazo.addEventListener("click", function(){
+botonazo.addEventListener("click", function () {
     alert(sumar_numeros(numero1.value, numero2.value));
 });
 

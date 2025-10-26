@@ -10,12 +10,12 @@ var productos = '';
 var subtotal = 0;
 var total = 0;
 
-agregar.addEventListener('click', function(){
+agregar.addEventListener('click', function () {
     subtotal = parseInt(pre.value) * parseInt(cant.value);
     total = total + subtotal;
-    productos = productos + 'Precio = ' + pre.value + ' Cant = ' + cant.value + ' Subtotal = '+ subtotal + '<br>';
+    productos = productos + 'Precio = ' + pre.value + ' Cant = ' + cant.value + ' Subtotal = ' + subtotal + '<br>';
     div.innerHTML = productos;
-    h3.innerHTML = '$'+total;
+    h3.innerHTML = '$' + total;
 });
 
 //mismo ejercicio pero con array
@@ -25,7 +25,7 @@ var precio_x_cant = [];
 var subtotal_arr = 0;
 var total_arr = 0;
 
-agregar_array.addEventListener('click', function() {
+agregar_array.addEventListener('click', function () {
     precio_arr.push(parseInt(pre.value));
     cant_arr.push(parseInt(cant.value));
 

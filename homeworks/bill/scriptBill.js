@@ -22,21 +22,21 @@ let precio = "";
 let totalSumaCant = 0;
 let totalSumaPrecio = 0;
 
-guardar.addEventListener("click", function(){    
-    
+guardar.addEventListener("click", function () {
+
     //Obtener valores actuales del input
     let cantVal = parseInt(input_cant.value);
     let priceVal = parseFloat(input_precio.value);
     let descVal = input_description.value;
 
     //Asegurarse de valores válidos: numéricos
-    if(isNaN(cantVal)  || isNaN(priceVal)){
+    if (isNaN(cantVal) || isNaN(priceVal)) {
         alert('Por favor, ingresa valores numéricos válidos en cantidad y precio.');
         return;
     }
 
     //Acomular cantidad y precio total
-   
+
     totalSumaCant = totalSumaCant + cantVal;
     totalSumaPrecio = totalSumaPrecio + (cantVal * priceVal);
 
@@ -57,13 +57,13 @@ guardar.addEventListener("click", function(){
 
     cantidad = `${cantidad} <br> ${cantVal}`;
     descripcion = `${descripcion} <br> ${descVal}`;
-    precio = `${precio}<br> $${priceVal}`;    
+    precio = `${precio}<br> $${priceVal}`;
     total = `<br><br>Total a pagar: $${totalSumaPrecio}`
 
-    localStorage.setItem("nombres", datos);    
-    localStorage.setItem("nombreCantidad",nombreCantidad);
-    localStorage.setItem("nombreDescripcion",nombreDescripcion);
-    localStorage.setItem("nombrePrecio",nombrePrecio);
+    localStorage.setItem("nombres", datos);
+    localStorage.setItem("nombreCantidad", nombreCantidad);
+    localStorage.setItem("nombreDescripcion", nombreDescripcion);
+    localStorage.setItem("nombrePrecio", nombrePrecio);
     localStorage.setItem("cantidad", cantidad);
     localStorage.setItem("descripcion", descripcion);
     localStorage.setItem("precio", precio);
@@ -74,15 +74,15 @@ guardar.addEventListener("click", function(){
     price.value = ''
 });
 
-recuperar.addEventListener("click", function(){
-    h3.innerHTML = localStorage.getItem("nombres");   
+recuperar.addEventListener("click", function () {
+    h3.innerHTML = localStorage.getItem("nombres");
     h3_cant.innerHTML = localStorage.getItem("cantidad");
     h3_descrip.innerHTML = localStorage.getItem("descripcion");
     h3_precio.innerHTML = localStorage.getItem("precio");
     h3_cant_name.innerHTML = localStorage.getItem("nombreCantidad");
     h3_descrip_name.innerHTML = localStorage.getItem("nombreDescripcion");
-    h3_precio_name.innerHTML = localStorage.getItem("nombrePrecio"); 
-    totalPrecio.innerHTML = localStorage.getItem("precioTotal");  
+    h3_precio_name.innerHTML = localStorage.getItem("nombrePrecio");
+    totalPrecio.innerHTML = localStorage.getItem("precioTotal");
 
     name1.value = ''
     lastname.value = ''

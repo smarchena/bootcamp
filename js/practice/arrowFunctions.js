@@ -10,4 +10,4 @@ saludo = function () {
 
 // Arrow Function - Ecma Script v6 (ES6)
 
-var saludo = (saludo) => { return 'hola'}
+var saludo = (saludo) => { return 'hola' }

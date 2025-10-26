@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator and converter</title>
     <link rel="stylesheet" href="./calcuStyles.css">
 </head>
+
 <body>
     <div class="main">
         <div class="left">
             <div class="calculator">
                 <h2 id="h2"><strong>-- CALCULATOR --</strong></h2>
                 <p>online basic calculator</p>
-                <input type="text" placeholder="0" class="vista" disabled id="firstBox"> <br>                                                     
+                <input type="text" placeholder="0" class="vista" disabled id="firstBox"> <br>
                 <button type="submit" class="boton_estilo" value="7" id="key_7">7</button>
                 <button type="submit" class="boton_estilo" value="8" id="key_8">8</button>
                 <button type="submit" class="boton_estilo" value="9" id="key_9">9</button>
@@ -28,22 +30,24 @@
                 <button type="submit" class="boton_estilo" id="key_reset">AC</button>
                 <button type="submit" class="boton_estilo" value="0" id="key_0">0</button>
                 <button type="submit" class="boton_estilo" id="key_result">=</button>
-                <button type="submit " class="boton_symbol" id="key_div" value="/"><strong>&divide;</strong></button><br><br>
+                <button type="submit " class="boton_symbol" id="key_div"
+                    value="/"><strong>&divide;</strong></button><br><br>
             </div>
         </div>
 
-        <div class="right">            
+        <div class="right">
             <div class="converter">
                 <h2>-- CONVERTER -- </h2>
-                <p>online words converter in upper and lower case.</p>                
+                <p>online words converter in upper and lower case.</p>
                 <input type="text" placeholder="Escriba algo" id="texto"><br><br>
                 <textarea id="mayuscula" placeholder="Texto en MAYÚSCULA" disabled></textarea><br><br>
                 <textarea id="minuscula" placeholder="Texto en minúscula" disabled></textarea><br><br>
                 <textarea placeholder="N° caracteres" id="caracteres" disabled></textarea><br>
-                <button id="boton">Reset</button>         
+                <button id="boton">Reset</button>
             </div>
         </div>
     </div>
     <script text="text/javascript" src="./calcudesign.js"></script>
 </body>
+
 </html>
