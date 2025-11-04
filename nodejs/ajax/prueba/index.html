@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="submit" id="button">Obtener hora</button>
+
+    <div id="div">
+        <h3 id="h3"></h3>
+    </div>
+    <form id="form">
+        <input type="text" placeholder="Ingrese elemento a listar" name="lista" id="lista">
+        <button type="submit" id="button2">Guardar</button>
+    </form>
+
+    <div id="div2">
+        <ul id="ul"></ul>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#button').click(function (e) {
+                e.preventDefault()
+                //alert('Prueba exitosa.')                
+                $.ajax({
+                    url: '/toque',
+                    type: 'post',
+                    success: function (mensaje) {
+                        $('#h3').html(mensaje)
+                    }
+                })
+            })
+            $('#button2').click(function (a) {
+                a.preventDefault()                
+                $.ajax({
+                    url: '/list',
+                    type: 'post',
+                    data: $('#form').serialize(),
+                    success: function (mensaje_lista) {
+                        $('#ul').append(`<li class='list'>${mensaje_lista}</li>`)
+                    }
+                })
+                $('#lista').value('')
+            })
+ 
+        })
+    </script>
+</body>
+
+</html>

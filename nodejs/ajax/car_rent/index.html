@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid content-center text-center" id="header">
+        <header>
+            <strong>
+                <h2 class="mt-5">ALQUILER DE AUTOS</h2>
+            </strong>
+            <p class="fst-italic">El precio por hora del aquiler es de $20 USD</p>
+
+        </header>
+    </div>
+
+    <div class="container-fluid d-flex flex-wrap align-items-center" id="content">
+        <form action="" method="post" id="form" class="text-center m-auto mt-3">
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-3">
+                <select class="form-select w-auto text-center" name="select">
+                    <option selected id="select">Seleccione vehículo a alquilar</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Chrevolet">Chrevolet</option>
+                    <option value="Kia">Kia</option>
+                </select>
+                <input type="text" name="img" class="form-control w-auto" placeholder="Inserte URL de imagen"
+                    alt="imagen-auto">
+                <input class="form-control text-center w-25" type="number" placeholder="Ingrese cantidad de horas"
+                    name="hour" id="hour">
+                <button type="submit" class="btn btn-outline-success" id="button">Alquilar</button>
+            </div>
+
+        </form>
+        <div class="container" id="div_table">
+            <table class="table table-hover table-striped text-center" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Vehículo</th>
+                        <th scope="col">Horas a usar</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Función</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#button').click(function (exclude) {
+                exclude.preventDefault()
+                $.ajax({
+                    url: '/alquiler',
+                    type: 'post',
+                    data: $('#form').serialize(),
+                    success: function (mensaje) {
+                        $('#table').append(mensaje)
+                        $('#form')[0].reset()
+                    }
+                })
+            })
+            $('#table').on('click', '#btn-update', function () {
+                const vehicle = $(this).closest('tr').find('th').eq(0).text()
+                $.ajax({
+                    url: '/update',
+                    type: 'post',
+                    data: { select: vehicle },
+                    success: function (upMessage) {
+                        alert(upMessage)
+                    }
+                })
+            })
+            $('#table').on('click', '#btn-delete', function () {
+                const vehicle = $(this).closest('tr').find('th').eq(0).text()
+                $.ajax({
+                    url: '/delete',
+                    type: 'post',
+                    data: { select: vehicle },
+                    success: function (delMessage) {
+                        alert(delMessage)
+                    }
+                })
+            })
+        })        
+    </script>
+</body>
+
+</html>
