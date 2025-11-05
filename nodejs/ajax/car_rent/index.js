@@ -12,21 +12,21 @@ app.post('/alquiler', function (req, res) {
     let price = parseFloat(req.body.hour) * 20
     res.send(`
         <tr>
-            <td><img src="${req.body.img}" alt="imagen${req.body.select}" style="width:200px; height:auto;"></td>
-            <th scope="row"> ${req.body.select} </th>
-            <th scope="row">${req.body.hour}</th>
-            <th scope="row">$${price}</th>   
-            <th scope="row"><button type="button" class="btn btn-outline-info" id="btn-update" name="update">Update</button>
-            <button type="button" class="btn btn-outline-danger" id="btn-delete" name="delete">Delete</button></th>       
+            <th scope="row"><img src="${req.body.img}" alt="imagen${req.body.select}" style="width:100px; height:auto;"></th>
+            <td> ${req.body.select} </td>
+            <td>${req.body.hour}</td>
+            <td>$${price}</td>   
+            <td><button type="button" class="btn btn-outline-info" id="btn-update" name="update">Update</button>
+            <button type="button" class="btn btn-outline-danger" id="btn-delete" name="delete">Delete</button></td>       
         </tr>`
     )
 })
 
-app.post('/update', function(req, res){
+app.put('/update', function(req, res){
     res.send(`Los datos del${req.body.select}se han actualizado correctamente.`)
     console.log(`Los datos del${req.body.select}se han actualizado correctamente.`)
 })
-app.post('/delete', function(req, res){
+app.delete('/delete', function(req, res){
     res.send(`Los datos del${req.body.select}se han eliminado correctamente.`)
     console.log(`Los datos del${req.body.select}se han eliminado correctamente.`)
 })

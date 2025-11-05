@@ -7,7 +7,8 @@ $(document).ready(function () {
         let inputYear = $('#año').val()
         let inputMoney = $('#valor').val()
 
-        $('#table').show().append(`            
+        $('#table').show()
+        $('#body').show().append(`            
             <tr class='child'>
                 <th>${inputName}</th>
                 <th>${gender}</th>

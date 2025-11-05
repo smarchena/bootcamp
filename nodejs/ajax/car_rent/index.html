@@ -40,7 +40,7 @@
 
         </form>
         <div class="container" id="div_table">
-            <table class="table table-hover table-striped text-center" id="table">
+            <table class="table text-center table-hover" id="table">
                 <thead>
                     <tr>
                         <th scope="col">Imagen</th>
@@ -50,15 +50,17 @@
                         <th scope="col">Función</th>
                     </tr>
                 </thead>
+                <tbody id="tbody">
+                </tbody>
             </table>
         </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
     <script>
         $(document).ready(function () {
 
@@ -69,16 +71,16 @@
                     type: 'post',
                     data: $('#form').serialize(),
                     success: function (mensaje) {
-                        $('#table').append(mensaje)
+                        $('#tbody').append(mensaje)
                         $('#form')[0].reset()
                     }
                 })
             })
             $('#table').on('click', '#btn-update', function () {
-                const vehicle = $(this).closest('tr').find('th').eq(0).text()
+                const vehicle = $(this).closest('tr').find('td').eq(0).text()
                 $.ajax({
                     url: '/update',
-                    type: 'post',
+                    type: 'put',
                     data: { select: vehicle },
                     success: function (upMessage) {
                         alert(upMessage)
@@ -86,10 +88,10 @@
                 })
             })
             $('#table').on('click', '#btn-delete', function () {
-                const vehicle = $(this).closest('tr').find('th').eq(0).text()
+                const vehicle = $(this).closest('tr').find('td').eq(0).text()
                 $.ajax({
                     url: '/delete',
-                    type: 'post',
+                    type: 'delete',
                     data: { select: vehicle },
                     success: function (delMessage) {
                         alert(delMessage)
