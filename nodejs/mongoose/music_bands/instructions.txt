@@ -1,0 +1,13 @@
+Guardar información sobre bandas de música:
+
+    - Nombre de la banda
+    - Categoría de música (rock, pop, reagge, etc)
+    - Cantante
+    - Integrante (4, 2, 5, etc)
+
+Formulario para:
+    - Guardar una nueva banda.
+    - Eliminar una banda (por ID o por nombre de la banda)
+    - Modificar una banda. 
+
+Cuando se realiza una operación (CRUD), mostrar por alert el mensaje del servidor.

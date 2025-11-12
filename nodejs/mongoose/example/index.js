@@ -23,23 +23,48 @@ app.get('/formulario', function (req, res) {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/', async function() { //funciones asincronicas, si la llamada o busqueda se demora mucho, no se quede ahí sino que siga con el resto del código.
+//ruta para obtener los usuarios (READ)
+app.get('/', async function () { //funciones asincronicas, si la llamada o busqueda se demora mucho, no se quede ahí sino que siga con el resto del código.
     let documentos = await Ejemplo_coleccion.find() //db.collection.find({}).sort()
+    console.log("Buscando los documentos de la colección");
     console.log(documentos)
 })
 
-//Ruta para guardar los datos enviados por el cliente (Create)
+//Ruta para guardar los datos enviados por el cliente - Crear documento (CREATE)
 app.post("/guardarDatos", async function (req, res) {
-  var datos_cliente = req.body
-  var doc = new Ejemplo_coleccion(datos_cliente)
-  await doc.save()
-  console.log(doc)
-  res.send(doc)
+    var datos_cliente = req.body
+    var doc = new Ejemplo_coleccion(datos_cliente)
+    await doc.save()
+    console.log(doc)
+    res.send(doc)
 });
+
+//Ruta para actualizar el documento (UPDATE)
+app.put('/usuario/:id_usuario', async function (req, res) {
+    var id = req.params.id_usuario
+    console.log(`Modificando el document con id: ${id}`)
+
+    //Forma 1
+    var doc = await Ejemplo_coleccion.findById(id) // buscamos el documento con _id = id
+    doc.nombre = req.body.nombre
+    doc.apellido = req.body.apellido
+    doc.edad = req.body.edad
+    await doc.save()
+
+    /* //Forma 2
+        var doc = await Ejemplo_coleccion.updateOne({_id: id},{estado: true, pais: 'Suiza'}) */
+})
+
+//Ruta para eliminar un documento (DELETE)
+app.delete('/usuario/:id_usuario', async function (req, res) {
+    var id = req.params.id_usuario
+    var doc = await Ejemplo_coleccion.findById(id)
+    await doc.deleteOne()
+})
 
 app.listen(3000, function () {
     console.log('Iniciando servidor...')
 })
-//ruta para obtener los usuarios (Read)
+
 
 
