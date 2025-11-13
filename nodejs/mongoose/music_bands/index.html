@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bands</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>MUSIC BANDS</h2>
+            <form id="bandsForm">
+                <input type="text" placeholder="Ingrese nombre de banda" name="name">
+                <select name="category" id="select">
+                    <option value="gender" selected disabled>Género musical</option>
+                    <option value="rock">Rock</option>
+                    <option value="pop">Pop</option>
+                    <option value="hiphop">Hip hop</option>
+                    <option value="romantic">Romantica</option>
+                    <option value="altern">Alterna</option>
+                </select> <br><br>
+                <input type="text" placeholder="Ingrese nombre del cantante" name="singer">
+                <input type="number" name="integrants" placeholder="Digite número de integrantes"> <br><br>
+                <button id="add">Agregar</button>
+            </form>
+        </div>
+        <div>
+            <h2>UPDATE MUSIC BANDS</h2>
+            <form id="updateBand">
+                <input type="text" placeholder="Ingrese ID de banda" name="id_band" id="id_band"><br><br>
+                <input type="text" placeholder="Ingrese nombre de banda" name="name">
+                <select name="category" id="select">
+                    <option selected disabled>Género musical</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Hip_Hop">Hip hop</option>
+                    <option value="Romantica">Romantica</option>
+                    <option value="Alterna">Alterna</option>
+                </select> <br><br>
+                <input type="text" placeholder="Ingrese nombre del cantante" name="singer">
+                <input type="number" name="integrants" placeholder="Digite número de integrantes"> <br><br>
+                <button id="update">Actualizar</button>
+            </form>
+        </div>
+        <div>
+            <h2>Eliminar banda</h2>
+
+            <input type="text" placeholder="Ingrese ID de banda" name="id_band_delete" id="id_band_delete">
+            <button id="delete">Eliminar</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#add').click(function (e) {
+                e.preventDefault()
+                $.ajax({
+                    url: '/formulario',
+                    type: 'post',
+                    data: $('#bandsForm').serialize(),
+                    success: function (respuesta) {
+                        alert(respuesta)
+                        $('#bandsForm').trigger('reset')
+                    }
+                })
+            })
+            $('#update').click(function (e) {
+                e.preventDefault()
+                let id = $('#id_band').val()
+                $.ajax({
+                    url: '/update/' + id,
+                    type: 'put',
+                    data: $('#updateBand').serialize(),
+                    success: function (respuesta) {
+                        alert(respuesta)
+                        $('#updateBand').trigger('reset')
+                    }
+                })
+            })
+            $('#delete').click(function (e) {
+                e.preventDefault()
+                let id = $('#id_band_delete').val()
+                $.ajax({
+                    url: '/delete/' + id,
+                    type: 'delete',
+                    success: function (respuesta) {
+                        alert(respuesta)
+                        $('#id_band_delete').val('')
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

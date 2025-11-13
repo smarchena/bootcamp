@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 app.use(bodyParser.urlencoded({ extended: true }))
 
 //conectar con la base de datos
-mongoose.connect('mongodb+srv://smarchena:Marchena08.@cluster0.pvycuuk.mongodb.net/dbPruebaNode')
+mongoose.connect('mongodb+srv://user:password@cluster0.pvycuuk.mongodb.net/dbPruebaNode')
     .then(function (db) {
         console.log('Conectado a la base de datos!')
     })
@@ -16,7 +16,7 @@ mongoose.connect('mongodb+srv://smarchena:Marchena08.@cluster0.pvycuuk.mongodb.n
     })
 
 //se hace el require del modelo
-let = Ejemplo_coleccion = require('./models/usuarios')
+let Ejemplo_coleccion = require('./models/usuarios')
 
 //inicio
 app.get('/formulario', function (req, res) {
