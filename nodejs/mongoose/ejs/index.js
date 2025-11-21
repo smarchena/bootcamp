@@ -16,10 +16,10 @@ mongoose
     "mongodb+srv://user:password@cluster0.pvycuuk.mongodb.net/ejs"
   )
   .then(function (db) {
-    console.log("Conectado con la base de datos! :D");
+    console.log("¡Conectado con la base de datos! :D");
   })
   .catch(function (err) {
-    console.log(err);
+    console.log(`¡Ups! Ocurrió un error :( ${err}`);
   });
 
 var Tarea = require("./src/models/Tareas");
