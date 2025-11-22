@@ -13,7 +13,7 @@ app.set("view engine", "ejs"); //configuro el motor de plantilla o motor de vist
 //Conexión con BD
 mongoose
   .connect(
-    "mongodb+srv://user:password@cluster0.pvycuuk.mongodb.net/ejs"
+    "mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/ejs"
   )
   .then(function (db) {
     console.log("¡Conectado con la base de datos! :D");
