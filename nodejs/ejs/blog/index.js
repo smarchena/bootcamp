@@ -21,7 +21,7 @@ mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blo
     })
 
 app.get('/inicio', async function (req, res){
-    var docs = await Blog.find();
+    /* var docs = await Blog.find(); */
     res.render('index', {titulo: 'este es el título'})
 })
 
