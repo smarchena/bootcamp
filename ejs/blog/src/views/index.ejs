@@ -1,9 +1,12 @@
 <%- include('_header.ejs') %>
 
     <body>
-        <h1 class="mx-3 d-flex justify-content-center mb-5 mt-4">
+        <h1 class="mx-3 d-flex justify-content-center mt-4">
             <%= titulo %>
         </h1>
+        <p class=" d-flex justify-content-center">
+            <%= message %>
+        </p>
             <div class="row row-cols-1 row-cols-md-4 g-4 container-fluid mb-5">
                 <% for(let i=0; i< blog.length; i++ ){ %>
                     <div class="col">

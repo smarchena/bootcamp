@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blo
 
 app.get('/inicio', async function (req, res){   
     let blogs = await Blog.find() 
-    res.render('index', {titulo: 'este es el título', blog: blogs})
+    res.render('index', {titulo: 'CARDS', blog: blogs, message: 'You can add a new card !'})
 })
 
 app.get('/create', async function (req, res) {     
@@ -55,8 +55,14 @@ app.post('/edit/:id_card', async function(req, res){
     res.redirect('/inicio')
 })
 
-app.get('/see-more/:id_card', async function(req,res){    
-    res.render('_see-more')
+app.get('/see-more/:id_card', async function(req,res){   
+    let id = req.params.id_card
+    let card = await Blog.findById(id)
+    res.render('_see-more', {
+        titulo: card.title,
+        url: card.url,
+        description: card.description
+    })
 })
 
 app.get('/delete/:id_card', async function(req, res){
