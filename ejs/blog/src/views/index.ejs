@@ -1,24 +1,25 @@
 <%- include('_header.ejs') %>
 
     <body>
-
         <h1 class="mx-3 d-flex justify-content-center mb-5 mt-4">
             <%= titulo %>
         </h1>
             <div class="row row-cols-1 row-cols-md-4 g-4 container-fluid mb-5">
                 <% for(let i=0; i< blog.length; i++ ){ %>
                     <div class="col">
-                        <div class="card h-100 mx-3">
-                            <img src="<%= blog[i].url %>" class="card-img-top" alt="card_image" name="img">
-                            <div class="card-body">
-                                <h5 class="card-title"> <%= blog[i].title %> </h5>
+                        <div class="card h-100 shadow bg-tertiary">
+                            <div class=" image-container d-flex justify-content-center" style="width: auto; height: 100%;">
+                                <img src="<%= blog[i].url %>" class="card-img-top" alt="card_image" name="img" >
+                            </div>                            
+                            <div class="card-body d-flex flex-column mt-3">
+                                <h5 class="card-title d-flex justify-content-center"> <%= blog[i].title %> </h5>
                                 <!-- <p class="card-text"> <%= blog[i].description %> </p> -->
                                 <br><br>
                                 <div class="position-absolute bottom-0 start-0 m-1">
-                                    <a href="/edit/<%= blog[i]._id %>" class="btn btn-primary">Edit</a>
+                                    <a href="/edit/<%= blog[i]._id %>" class="btn btn-outline-secondary">Edit</a>
                                 </div>
                                 <div class="position-absolute bottom-0 end-0 m-1">
-                                    <a href="#" class="btn btn-primary">See more</a>
+                                    <a href="/see-more/<%= blog[i]._id %>" class="btn btn-outline-secondary">See more</a>
                                 </div>
                             </div>
                         </div>

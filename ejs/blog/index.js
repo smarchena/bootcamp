@@ -20,7 +20,7 @@ mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blo
 
 app.get('/inicio', async function (req, res){   
     let blogs = await Blog.find() 
-    res.render('index', {titulo: 'este es el título', blog: blogs, url: Blog.findById(req.params.id)})
+    res.render('index', {titulo: 'este es el título', blog: blogs})
 })
 
 app.get('/create', async function (req, res) {     
@@ -41,7 +41,7 @@ app.get('/edit/:id_card', async function(req,res){
     let blogs = await Blog.find()
 
     res.render('_edit', {
-        titulo: `Edit card named "${card.title}"`,
+        titulo: `Editing card named: "${card.title}"`,
         blog: blogs,
         card: card,
         url: card.url
@@ -52,6 +52,17 @@ app.post('/edit/:id_card', async function(req, res){
     let id = req.params.id_card
     let card = await Blog.updateOne({ _id: id }, req.body);
     console.log('Actualizado con éxito.')
+    res.redirect('/inicio')
+})
+
+app.get('/see-more/:id_card', async function(req,res){    
+    res.render('_see-more')
+})
+
+app.get('/delete/:id_card', async function(req, res){
+    let id = req.params.id_card
+    let card = await Blog.findById(id)
+    await card.deleteOne({_id: id})
     res.redirect('/inicio')
 })
 
