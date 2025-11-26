@@ -20,18 +20,24 @@ mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blo
 
 app.get('/inicio', async function (req, res){   
     let blogs = await Blog.find() 
-    res.render('index', {titulo: 'CARDS', blog: blogs, message: 'You can add a new card !'})
+    res.render('index', {titulo: 'CARDS', blog: blogs, nuevo: false, verMas: false})
 })
 
-app.get('/create', async function (req, res) {     
-    res.render('_create')   
+app.get('/create', async function (req, res) {   
+    let blogs = await Blog.find()    
+    res.render('index', {
+        titulo: 'Create new card', 
+        blog: blogs,          
+        nuevo: true,
+        verMas: false
+    })   
 })
 
 app.post('/create', async function(req,res){        
     let datos = req.body
     let new_blog = new Blog(datos)
     new_blog.save()
-    console.log('Guardado en la base de datos: ok!')
+    console.log('Guardado en la base de datos: ok!')    
     res.redirect('/inicio')
 })
 
@@ -40,11 +46,13 @@ app.get('/edit/:id_card', async function(req,res){
     let card = await Blog.findById(id)
     let blogs = await Blog.find()
 
-    res.render('_edit', {
+    res.render('index', {
         titulo: `Editing card named: "${card.title}"`,
         blog: blogs,
         card: card,
-        url: card.url
+        url: card.url,
+        nuevo: false,
+        verMas: false
     })
 })
 
@@ -58,10 +66,12 @@ app.post('/edit/:id_card', async function(req, res){
 app.get('/see-more/:id_card', async function(req,res){   
     let id = req.params.id_card
     let card = await Blog.findById(id)
-    res.render('_see-more', {
+    res.render('index', {
         titulo: card.title,
         url: card.url,
-        description: card.description
+        description: card.description,
+        verMas: true,
+        nuevo: null
     })
 })
 
