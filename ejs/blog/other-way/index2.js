@@ -2,12 +2,12 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const Blog = require('./src/models/Blog')
+const Blog = require('../src/models/Blog')
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-let path = __dirname + "/src/views"
-app.set("views", path)
+let path = __dirname + "/src/views2"
+app.set("views2", path)
 app.set("view engine", "ejs")
 
 mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blog')
@@ -18,38 +18,20 @@ mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blo
         console.log(`Ups! Ocurrió un problema ${err}`)
     })
 
-app.get('/inicio', async function (req, res){  
-    
-    const search = req.query.search || ''
-    const filter = req.query.filter
-    
-    let query = {}
-
-    if(search){
-        query[filter] = {$regex: search, $options: 'i'}
-    }
-
-    let blogs = await Blog.find(query) 
-    res.render('index', {titulo: 'CARDS', blog: blogs, nuevo: false, verMas: false, search: search, filter: filter})
+app.get('/inicio', async function (req, res){   
+    let blogs = await Blog.find() 
+    res.render('index2', {titulo: 'este es el título', blog: blogs})
 })
 
-app.get('/create', async function (req, res) {   
-    let blogs = await Blog.find()    
-    res.render('index', {
-        titulo: 'Create new card', 
-        blog: blogs,          
-        nuevo: true,
-        verMas: false,
-        search: '',
-        filter: title
-    })   
+app.get('/create', async function (req, res) {     
+    res.render('_create')   
 })
 
 app.post('/create', async function(req,res){        
     let datos = req.body
     let new_blog = new Blog(datos)
     new_blog.save()
-    console.log('Guardado en la base de datos: ok!')    
+    console.log('Guardado en la base de datos: ok!')
     res.redirect('/inicio')
 })
 
@@ -58,13 +40,11 @@ app.get('/edit/:id_card', async function(req,res){
     let card = await Blog.findById(id)
     let blogs = await Blog.find()
 
-    res.render('index', {
+    res.render('_edit', {
         titulo: `Editing card named: "${card.title}"`,
         blog: blogs,
         card: card,
-        url: card.url,
-        nuevo: false,
-        verMas: false
+        url: card.url
     })
 })
 
@@ -75,16 +55,8 @@ app.post('/edit/:id_card', async function(req, res){
     res.redirect('/inicio')
 })
 
-app.get('/see-more/:id_card', async function(req,res){   
-    let id = req.params.id_card
-    let card = await Blog.findById(id)
-    res.render('index', {
-        titulo: card.title,
-        url: card.url,
-        description: card.description,
-        verMas: true,
-        nuevo: null
-    })
+app.get('/see-more/:id_card', async function(req,res){    
+    res.render('_see-more')
 })
 
 app.get('/delete/:id_card', async function(req, res){
