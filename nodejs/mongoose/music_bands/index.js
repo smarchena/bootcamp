@@ -5,7 +5,9 @@ const mongoose = require('mongoose')
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
-mongoose.connect('mongodb+srv://user:password@cluster0.pvycuuk.mongodb.net/music_bands')
+require('dotenv').config()
+
+mongoose.connect(process.env.MUSIC_BANDS)
     .then(function (db) {
         console.log('Conectado a la base de datos!! :D')
     }).catch(function (err) {

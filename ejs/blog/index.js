@@ -10,7 +10,9 @@ let path = __dirname + "/src/views"
 app.set("views", path)
 app.set("view engine", "ejs")
 
-mongoose.connect('mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/blog')
+require('dotenv').config()
+
+mongoose.connect(process.env.BLOG)
     .then(function (db) {
         console.log('¡Conectado a la base de datos! :D')
     }

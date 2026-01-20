@@ -3,11 +3,13 @@ const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
+require('dotenv').config()
+
 //configurar bodyParser
 app.use(bodyParser.urlencoded({ extended: true }))
 
 //conectar con la base de datos
-mongoose.connect('mongodb+srv://user:password@cluster0.pvycuuk.mongodb.net/dbPruebaNode')
+mongoose.connect(process.env.DB_PRUEBA_NODE)
     .then(function (db) {
         console.log('Conectado a la base de datos!')
     })

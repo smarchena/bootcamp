@@ -10,11 +10,10 @@ var path = __dirname + "/src/views";
 app.set("views", path); // donde estan los archivos que se van a mostrar en el navegador (views o vistas)
 app.set("view engine", "ejs"); //configuro el motor de plantilla o motor de vista a ulizar (EJS)
 
+require('dotenv').config()
 //Conexión con BD
 mongoose
-  .connect(
-    "mongodb+srv://user:<password>@cluster0.pvycuuk.mongodb.net/ejs"
-  )
+  .connect(process.env.EJS)
   .then(function (db) {
     console.log("¡Conectado con la base de datos! :D");
   })
