@@ -2,12 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm",
-    "analytics": false
+    "packageManager": "npm"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "primerProyecto": {
+    "nuevoProyecto": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "primerProyecto:build:production"
+              "buildTarget": "nuevoProyecto:build:production"
             },
             "development": {
-              "buildTarget": "primerProyecto:build:development"
+              "buildTarget": "nuevoProyecto:build:development"
             }
           },
           "defaultConfiguration": "development"
